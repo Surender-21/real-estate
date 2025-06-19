@@ -1,0 +1,1941 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="shortcut icon" href="./assets/svg/favicon.svg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="realtive bg-[#F0F5FF]">
+    <div class="bg-[url('./assets/png/hero-bg.png')] bg-no-repeat bg-center bg-cover">
+        <!-- nav -->
+        <div class="border-b border-white flex justify-center">
+            <div class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] w-full">
+                <nav
+                    class="flex items-center justify-between xl:py-[29px] lg:py-[25px] md:py-[20px] sm:py-[17px] py-[14px]">
+                    <div>
+                        <a class="text-white text-center font-semibold lg:text-2xl md:text-xl sm:text-lg text-[17px] leading-[128%] cursor-pointer"
+                            href="./index.html">Estate</a>
+                    </div>
+                    <div class="hidden lg:block">
+                        <ul class="flex xl:gap-[33px] lg:gap-[28px] md:gap-[25px]">
+                            <li>
+                                <a class="text-black lg:text-base sm:text-[15px] sm:text-sm text-[13px] underline leading-[128%] font-medium hover:text-white transition-all ease-in-out duration-500 hover:no-underline"
+                                    href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-black hover:underline transition-all ease-in-out duration-500 lg:text-base sm:text-[15px] sm:text-sm text-[13px] leading-[128%] font-medium"
+                                    href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-black hover:underline transition-all ease-in-out duration-500 lg:text-base sm:text-[15px] sm:text-sm text-[13px] leading-[128%] font-medium"
+                                    href="#">Properties</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-black hover:underline transition-all ease-in-out duration-500 lg:text-base sm:text-[15px] sm:text-sm text-[13px] leading-[128%] font-medium"
+                                    href="#">Blogs</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-black hover:underline transition-all ease-in-out duration-500 lg:text-base sm:text-[15px] sm:text-sm text-[13px] leading-[128%] font-medium"
+                                    href="#">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:block">
+                        <div class="flex items-center gap-[20px]">
+                            <div>
+                                <div>
+                                    <input class="hidden peer" type="checkbox" name="svg" id="peer">
+                                    <label class="realtive cursor-pointer" for="peer"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 30 30" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10 8.75C10 7.42392 10.5268 6.15215 11.4645 5.21447C12.4021 4.27678 13.6739 3.75 15 3.75C16.3261 3.75 17.5979 4.27678 18.5355 5.21447C19.4732 6.15215 20 7.42392 20 8.75C20 10.0761 19.4732 11.3479 18.5355 12.2855C17.5979 13.2232 16.3261 13.75 15 13.75C13.6739 13.75 12.4021 13.2232 11.4645 12.2855C10.5268 11.3479 10 10.0761 10 8.75ZM10 16.25C8.3424 16.25 6.75269 16.9085 5.58058 18.0806C4.40848 19.2527 3.75 20.8424 3.75 22.5C3.75 23.4946 4.14509 24.4484 4.84835 25.1517C5.55161 25.8549 6.50544 26.25 7.5 26.25H22.5C23.4946 26.25 24.4484 25.8549 25.1517 25.1517C25.8549 24.4484 26.25 23.4946 26.25 22.5C26.25 20.8424 25.5915 19.2527 24.4194 18.0806C23.2473 16.9085 21.6576 16.25 20 16.25H10Z"
+                                                fill="white" />
+                                        </svg></label>
+                                    <div
+                                        class="hidden peer-checked:block absolute xl:right-[18%] lg:right-[17%] top-[9%]">
+                                        <div class="flex items-center bg-white p-[15px_22px] rounded-xl">
+                                            <a class="text-black lg:text-base sm:text-[15px] sm:text-sm text-[13px] leading-[155%] font-semibold cursor-pointer"
+                                                href="#">Log in</a>
+                                            <p
+                                                class="text-black lg:text-base sm:text-[15px] sm:text-sm text-[13px] leading-[155%] font-semibold px-[11px_6px]">
+                                                /</p>
+                                            <a class="text-black lg:text-base sm:text-[15px] sm:text-sm text-[13px] leading-[155%] font-semibold cursor-pointer"
+                                                href="#">Sign Up</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="text-white bg-[#D45E05] xl:p-[11px_25px] lg:p-[9px_22px] rounded-[4px] cursor-pointer hover:bg-white hover:text-[#D45E05] hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out">Sign
+                                    Up</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block lg:hidden">
+                        <div>
+                            <input class="hidden peer" type="checkbox" name="bar" id="menu">
+                            <label for="menu" class="cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#ffffff">
+                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                </svg>
+                            </label>
+                            <div
+                                class="hidden peer-checked:block fixed right-0 top-0 shadow-md z-20 w-full sm:max-w-[250px] max-w-[200px] py-[15px] px-[18px] rounded-bl-[14px] bg-[#F0F5FF] h-dvh">
+                                <div class="flex">
+                                    <ul class="flex flex-col md:gap-[14px] sm:gap-[10px] gap-[4px] pt-[25px]">
+                                        <li><a class="md:text-base sm:text-[15px] text-sm" href="./index.html">Home</a>
+                                        </li>
+                                        <li><a class="md:text-base sm:text-[15px] text-sm cursor-pointer" href="#">About
+                                                Us</a></li>
+                                        <li><a class="md:text-base sm:text-[15px] text-sm cursor-pointer"
+                                                href="#">Properties</a></li>
+                                        <li><a class="md:text-base sm:text-[15px] text-sm cursor-pointer"
+                                                href="#">Blogs</a></li>
+                                        <li><a class="md:text-base sm:text-[15px] text-sm cursor-pointer"
+                                                href="#">Testimonials</a>
+                                        </li>
+                                        <li><a class="md:text-base sm:text-[15px] text-sm cursor-pointer"
+                                                href="#">Login</a></li>
+                                        <li><a class="md:text-base sm:text-[15px] text-sm cursor-pointer" href="#">Sign
+                                                up</a></li>
+                                    </ul>
+                                    <label for="menu" class="ml-auto block cursor-pointer mb-2">
+                                        <svg class="md:w-[24px] sm:w-[22px] w-[20px]" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" height="24px" viewBox="0 0 24 24" width="24px"
+                                            stroke="currentColor" class="text-black">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- hero -->
+        <section>
+            <div class="flex justify-center">
+                <div
+                    class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] w-full xl:py-[200px_150px] lg:py-[180px_140px] md:py-[150px_125px] sm:py-[130px_110px] py-[100px_95px]">
+                    <div
+                        class="w-full flex flex-col items-center xl:gap-[50px] lg:gap-[42px] md:gap-[36px] sm:gap-[28px] gap-[20px]">
+                        <div class="w-full flex flex-col items-center md:gap-[15px] sm:gap-[12px] gap-[8px]">
+                            <h1
+                                class="text-center xl:text-[64px] lg:text-6xl md:text-[55px] sm:text-5xl text-[30px] text-white max-w-[815px] leading-[128%] font-semibold">
+                                Turning Your Real
+                                Estate Dream into Realty</h1>
+                            <p
+                                class="text-center text-white max-w-[596px] font-normal lg:text-base md:text-[15px] text-sm">
+                                Discover a world of
+                                possibilities with our
+                                comprehensive real
+                                estate
+                                services. we provide all
+                                the resources you need to
+                                make informed decisions.</p>
+                        </div>
+                        <div
+                            class="bg-white w-full whitespace-nowrap xl:p-[12px_17px] lg:p-[11px_15px] md:p-[9px_14px] sm:p-[8px_12px] p-[7px_10px] rounded-sm">
+                            <div class="flex items-center justify-between gap-[15px_10px] xl:flex-nowrap flex-wrap">
+                                <div class="flex items-center gap-[15px] w-full md:max-w-[300px]">
+                                    <div>
+                                        <img class="xl:w-[53px] lg:w-[48px] md:w-[45px] sm:w-[38px] w-[32px]"
+                                            src="./assets/svg/location.svg" alt="location">
+                                    </div>
+                                    <div
+                                        class="w-full md:max-w-[275px]  min-[1034px]:border-r border-[#D9D9D9]  min-[1034px]:pr-[13px]">
+                                        <label for="options"
+                                            class="block lg:text-base md:text-[15px] text-sm font-bold">Location</label>
+                                        <select id="options" name="option"
+                                            class="w-full min-[1030px]:max-w-[200px] outline-none lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]">
+                                            <option class="md:text-sm text-[13px] text-[rgba(0,0,0,0.70)]" value="#">
+                                                Search Location</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option1">
+                                                Gurgaon
+                                            </option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option2">Delhi</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option3">Noida</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option4">Mumbai</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option5">Banglore</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option6">Pune</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option7">Panchkula</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-[15px] w-full md:max-w-[300px]">
+                                    <div>
+                                        <img class="xl:w-[53px] lg:w-[48px] md:w-[45px] sm:w-[38px] w-[32px]"
+                                            src="./assets/svg/a-icon.svg" alt="a-icon">
+                                    </div>
+                                    <div
+                                        class="w-full md:max-w-[275px] min-[1034px]:border-r border-[#D9D9D9] min-[1034px]:pr-[13px]">
+                                        <label for="options"
+                                            class="block lg:text-base md:text-[15px] text-sm font-bold">Select
+                                            Type</label>
+                                        <select id="options" name="option"
+                                            class="w-full  min-[1030px]:max-w-[200px] outline-none lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]">
+                                            <option class="md:text-sm text-[13px]" value="">Property Type</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option1">Appartment</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option2">Builder Floors</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option3">Villa</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option4">Residential</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-[15px] w-full md:max-w-[300px]">
+                                    <div>
+                                        <img class="xl:w-[53px] lg:w-[48px] md:w-[45px] sm:w-[38px] w-[32px]"
+                                            src="./assets/svg/budget.svg" alt="budget">
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="options"
+                                            class="block lg:text-base md:text-[15px] text-sm font-bold">Budget</label>
+                                        <select id="options" name="option"
+                                            class="w-full min-[1030px]:max-w-[275px] outline-none lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]">
+                                            <option class="md:text-sm text-[13px]" value="">Determine Your Budget
+                                            </option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option1">Under 2.50 Cr*</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option2">Under 3.50 Cr*</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option3">Under 5.50 Cr*</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option4">Under 8.50 Cr*</option>
+                                            <option
+                                                class="lg:text-base md:text-[15px] text-sm font-normal traking-[0.48px]"
+                                                value="option5">Under 10 Cr*</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] bg-[#D45E05] rounded-sm text-white lg:text-base md:text-[15px] text-sm cursor-pointer hover:bg-white hover:text-[#D45E05] hover:shadow-[0px_6px_25px_-2px_#D45E05] transition-all duration-800 ease-in-out font-semibold">Search
+                                        Property</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Renters -->
+    <section>
+        <div class="bg-black flex justify-center">
+            <div class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] w-full">
+                <div
+                    class="flex justify-between xl:py-[30px] lg:py-[27px] md:py-[24px] sm:py-[20px] py-[18px] gap-[15px_45px] flex-wrap">
+                    <div class="flex flex-col items-center">
+                        <h2
+                            class="text-white font-semibold leading-[155%] lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
+                            128<span class="text-[#7D9EAD]">K</span></h2>
+                        <p class="lg:text-base md:text-[15px] text-sm text-white font-semibold leading-[155%]">Renters
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h2
+                            class="text-white font-semibold leading-[155%] lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
+                            300<span class="text-[#7D9EAD]">+</span></h2>
+                        <p class="lg:text-base md:text-[15px] text-sm text-white font-semibold leading-[155%]">
+                            Specialists
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h2
+                            class="text-white font-semibold leading-[155%] lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
+                            78<span class="text-[#7D9EAD]">%</span></h2>
+                        <p class="lg:text-base md:text-[15px] text-sm text-white font-semibold leading-[155%]">Yearly
+                            Growth
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h2
+                            class="text-white font-semibold leading-[155%] lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
+                            10<span class="text-[#7D9EAD]">K+</span></h2>
+                        <p class="lg:text-base md:text-[15px] text-sm text-white font-semibold leading-[155%]">
+                            Properties
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Requirement -->
+    <section>
+        <div class="flex justify-center">
+            <div
+                class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] xl:py-[125px] lg:py-[110px] md:py-[95px] sm:py-[75px] py-[55px] w-full">
+                <div class="flex flex-col xl:gap-[60px] lg:gap-[55px] md:gap-[48px] sm:gap-[42px] gap-[35px]">
+                    <div>
+                        <h2
+                            class="text-center font-semibold lg:text-5xl md:text-4xl sm:text-3xl text-2xl leading-[128%]">
+                            Search By
+                            Property
+                            Requirement
+                        </h2>
+                    </div>
+                    <div
+                        class="flex justify-center xl:flex-nowrap flex-wrap xl:gap-[24px] lg:gap-[24px_20px] md:gap-[20px_17px] sm:gap-[17px_14px] gap-[14px_10px]">
+                        <div
+                            class="bg-[url('./assets/png/appartment.png')] bg-no-repeat bg-center bg-cover xl:max-w-[209px] lg:max-w-[195px] md:max-w-[180px] min-[380px]:max-w-[168px] w-full flex flex-col lg:gap-[18px] md:gap-[15px] sm:gap-[13px] gap-[9px] items-center rounded-xl xl:py-[86px_25px] lg:py-[78px_24px] md:py-[72px_22px] sm:py-[68px_20px] py-[65px_18px] hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 group cursor-pointer">
+                            <svg class="lg:w-[40px] md:w-[35px] sm:w-[35px] w-[30px]" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 40 40" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.6752 5.19999C20.4738 5.07077 20.2395 5.00208 20.0002 5.00208C19.7609 5.00208 19.5266 5.07077 19.3252 5.19999L1.8252 16.45L3.1752 18.55L5.0002 17.38V33.75C5.0002 34.0815 5.13189 34.3995 5.36631 34.6339C5.60073 34.8683 5.91867 35 6.2502 35H33.7502C34.0817 35 34.3997 34.8683 34.6341 34.6339C34.8685 34.3995 35.0002 34.0815 35.0002 33.75V17.38L36.8252 18.5525L38.1752 16.4475L20.6752 5.19999ZM16.2502 22.5C15.9187 22.5 15.6007 22.6317 15.3663 22.8661C15.1319 23.1005 15.0002 23.4185 15.0002 23.75V32.5H17.5002V25H22.5002V32.5H25.0002V23.75C25.0002 23.4185 24.8685 23.1005 24.6341 22.8661C24.3997 22.6317 24.0817 22.5 23.7502 22.5H16.2502Z"
+                                    fill="white" />
+                            </svg>
+                            <p
+                                class="text-white font-semibold traking-[128%] lg:text-xl md:text-lg sm:text-base text-sm">
+                                Appartment</p>
+                            <a class="text-white bg-[#D45E05] font-semibold leading-[128%] xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] rounded-xl group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                href="#">View All</a>
+                        </div>
+                        <div
+                            class="bg-[url('./assets/png/commercial.png')] bg-no-repeat bg-center bg-cover xl:max-w-[209px] lg:max-w-[195px] md:max-w-[180px] min-[380px]:max-w-[168px] w-full flex flex-col lg:gap-[18px] md:gap-[15px] sm:gap-[13px] gap-[9px] items-center rounded-xl xl:py-[86px_25px] lg:py-[78px_24px] md:py-[72px_22px] sm:py-[68px_20px] py-[65px_18px] hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 group cursor-pointer">
+                            <svg class="lg:w-[40px] md:w-[35px] sm:w-[35px] w-[30px]" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 40 40" fill="none">
+                                <path
+                                    d="M6.66634 33.3333C5.74967 33.3333 4.96523 33.0072 4.31301 32.355C3.66079 31.7028 3.33412 30.9178 3.33301 30V18.0417C3.33301 17.5972 3.41634 17.1739 3.58301 16.7717C3.74967 16.3694 3.98579 16.015 4.29134 15.7083L10.958 9.04166C11.2913 8.70833 11.6663 8.45833 12.083 8.29166C12.4997 8.12499 12.9163 8.04166 13.333 8.04166C13.7497 8.04166 14.1663 8.12499 14.583 8.29166C14.9997 8.45833 15.3747 8.70833 15.708 9.04166L22.3747 15.7083C22.6802 16.0139 22.9163 16.3683 23.083 16.7717C23.2497 17.175 23.333 17.5983 23.333 18.0417V30C23.333 30.9167 23.0069 31.7017 22.3547 32.355C21.7025 33.0083 20.9175 33.3344 19.9997 33.3333H15.833C15.6108 33.3333 15.4163 33.25 15.2497 33.0833C15.083 32.9167 14.9997 32.7222 14.9997 32.5V26.6667C14.9997 26.1944 14.8397 25.7989 14.5197 25.48C14.1997 25.1611 13.8041 25.0011 13.333 25C12.8619 24.9989 12.4663 25.1589 12.1463 25.48C11.8263 25.8011 11.6663 26.1967 11.6663 26.6667V32.5C11.6663 32.7222 11.583 32.9167 11.4163 33.0833C11.2497 33.25 11.0552 33.3333 10.833 33.3333H6.66634ZM26.6663 31.6667V15.2917L20.8747 9.49999C20.3469 8.97221 20.2219 8.36777 20.4997 7.68666C20.7775 7.00555 21.2913 6.66555 22.0413 6.66666C22.2636 6.66666 22.4858 6.71555 22.708 6.81333C22.9302 6.9111 23.1108 7.02888 23.2497 7.16666L29.0413 12.9583C29.3469 13.2639 29.583 13.6183 29.7497 14.0217C29.9163 14.425 29.9997 14.8483 29.9997 15.2917V31.6667C29.9997 32.1389 29.8397 32.535 29.5197 32.855C29.1997 33.175 28.8041 33.3344 28.333 33.3333C27.8619 33.3322 27.4663 33.1722 27.1463 32.8533C26.8263 32.5344 26.6663 32.1389 26.6663 31.6667ZM33.333 31.6667V12.5417L30.2913 9.49999C29.7636 8.97221 29.6386 8.36777 29.9163 7.68666C30.1941 7.00555 30.708 6.66555 31.458 6.66666C31.6802 6.66666 31.9025 6.71555 32.1247 6.81333C32.3469 6.9111 32.5275 7.02888 32.6663 7.16666L35.708 10.2083C36.0136 10.5139 36.2497 10.8683 36.4163 11.2717C36.583 11.675 36.6663 12.0983 36.6663 12.5417V31.6667C36.6663 32.1389 36.5063 32.535 36.1863 32.855C35.8663 33.175 35.4708 33.3344 34.9997 33.3333C34.5286 33.3322 34.133 33.1722 33.813 32.8533C33.493 32.5344 33.333 32.1389 33.333 31.6667ZM13.333 21.6667C13.8052 21.6667 14.2013 21.5067 14.5213 21.1867C14.8413 20.8667 15.0008 20.4711 14.9997 20C14.9986 19.5289 14.8386 19.1333 14.5197 18.8133C14.2008 18.4933 13.8052 18.3333 13.333 18.3333C12.8608 18.3333 12.4652 18.4933 12.1463 18.8133C11.8275 19.1333 11.6675 19.5289 11.6663 20C11.6652 20.4711 11.8252 20.8672 12.1463 21.1883C12.4675 21.5094 12.863 21.6689 13.333 21.6667Z"
+                                    fill="white" />
+                            </svg>
+                            <p
+                                class="text-white font-semibold traking-[128%] lg:text-xl md:text-lg sm:text-base text-sm">
+                                Commercial</p>
+                            <a class="text-white bg-[#D45E05] leading-[128%] font-semibold xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] rounded-xl group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                href="#">View All</a>
+                        </div>
+                        <div
+                            class="bg-[url('./assets/png/builderfloors.png')] bg-no-repeat bg-center bg-cover xl:max-w-[209px] lg:max-w-[195px] md:max-w-[180px] min-[380px]:max-w-[168px] w-full flex flex-col lg:gap-[18px] md:gap-[15px] sm:gap-[13px] gap-[9px] items-center rounded-xl xl:py-[86px_25px] lg:py-[78px_24px] md:py-[72px_22px] sm:py-[68px_20px] py-[65px_18px] hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 group cursor-pointer">
+                            <svg class="lg:w-[40px] md:w-[35px] sm:w-[35px] w-[30px]" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 40 40" fill="none">
+                                <g clip-path="url(#clip0_88_3000)">
+                                    <path
+                                        d="M34.4443 8.88889H24.4443V36.6667H36.6666V11.1111C36.6666 10.5217 36.4324 9.95651 36.0157 9.53976C35.5989 9.12301 35.0337 8.88889 34.4443 8.88889ZM28.8888 27.7778H26.6666V25.5556H28.8888V27.7778ZM28.8888 22.2222H26.6666V20H28.8888V22.2222ZM28.8888 16.6667H26.6666V14.4444H28.8888V16.6667ZM33.3332 27.7778H31.111V25.5556H33.3332V27.7778ZM33.3332 22.2222H31.111V20H33.3332V22.2222ZM33.3332 16.6667H31.111V14.4444H33.3332V16.6667Z"
+                                        fill="white" />
+                                    <path
+                                        d="M19.8666 3.33334H6.79989C6.17516 3.33334 5.57601 3.58152 5.13426 4.02327C4.69251 4.46502 4.44434 5.06417 4.44434 5.6889V36.6667H9.99989V33.3333H16.6666V36.6667H22.2221V5.6889C22.2221 5.06417 21.9739 4.46502 21.5322 4.02327C21.0904 3.58152 20.4913 3.33334 19.8666 3.33334ZM9.99989 27.7778H7.77767V25.5556H9.99989V27.7778ZM9.99989 22.2222H7.77767V20H9.99989V22.2222ZM9.99989 16.6667H7.77767V14.4445H9.99989V16.6667ZM9.99989 11.1111H7.77767V8.8889H9.99989V11.1111ZM14.4443 27.7778H12.2221V25.5556H14.4443V27.7778ZM14.4443 22.2222H12.2221V20H14.4443V22.2222ZM14.4443 16.6667H12.2221V14.4445H14.4443V16.6667ZM14.4443 11.1111H12.2221V8.8889H14.4443V11.1111ZM18.8888 27.7778H16.6666V25.5556H18.8888V27.7778ZM18.8888 22.2222H16.6666V20H18.8888V22.2222ZM18.8888 16.6667H16.6666V14.4445H18.8888V16.6667ZM18.8888 11.1111H16.6666V8.8889H18.8888V11.1111Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_88_3000">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p
+                                class="text-white font-semibold traking-[128%] lg:text-xl md:text-lg sm:text-base text-sm">
+                                Builder Floors</p>
+                            <a class="text-white bg-[#D45E05] leading-[128%] font-semibold xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] rounded-xl group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                href="#">View All</a>
+                        </div>
+                        <div
+                            class="bg-[url('./assets/png/vila.png')] bg-no-repeat bg-center bg-cover xl:max-w-[209px] lg:max-w-[195px] md:max-w-[180px] min-[380px]:max-w-[168px] w-full flex flex-col lg:gap-[18px] md:gap-[15px] sm:gap-[13px] gap-[9px] items-center rounded-xl xl:py-[86px_25px] lg:py-[78px_24px] md:py-[72px_22px] sm:py-[68px_20px] py-[65px_18px] hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 group cursor-pointer">
+                            <svg class="lg:w-[40px] md:w-[35px] sm:w-[35px] w-[30px]" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 40 40" fill="none">
+                                <path
+                                    d="M15 35V20H28.3333C28.3333 19.0833 28.66 18.2989 29.3133 17.6467C29.9667 16.9944 30.7511 16.6678 31.6667 16.6667C32.5822 16.6656 33.3672 16.9922 34.0217 17.6467C34.6761 18.3011 35.0022 19.0856 35 20V35H26.6667V26.6667H23.3333V35H15ZM5 35V13.3333L26.6667 5V16.6667H11.6667V35H5Z"
+                                    fill="white" />
+                            </svg>
+                            <p
+                                class="text-white font-semibold traking-[128%] lg:text-xl md:text-lg sm:text-base text-sm">
+                                Vila</p>
+                            <a class="text-white bg-[#D45E05] font-semibold leading-[128%] xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] rounded-xl group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                href="#">View All</a>
+                        </div>
+                        <div
+                            class="bg-[url('./assets/png/residential.png')] bg-no-repeat bg-center bg-cover xl:max-w-[209px] lg:max-w-[195px] md:max-w-[180px] min-[380px]:max-w-[168px] w-full flex flex-col lg:gap-[18px] md:gap-[15px] sm:gap-[13px] gap-[9px] items-center rounded-xl xl:py-[86px_25px] lg:py-[78px_24px] md:py-[72px_22px] sm:py-[68px_20px] py-[65px_18px] hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 group cursor-pointer">
+                            <svg class="lg:w-[40px] md:w-[35px] sm:w-[35px] w-[30px]" xmlns="http://www.w3.org/2000/svg"
+                                width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path
+                                    d="M35.0003 31.6667H38.3337V35H1.66699V31.6667H5.00033V6.66667C5.00033 6.22464 5.17592 5.80072 5.48848 5.48816C5.80104 5.17559 6.22497 5 6.66699 5H23.3337C23.7757 5 24.1996 5.17559 24.5122 5.48816C24.8247 5.80072 25.0003 6.22464 25.0003 6.66667V31.6667H28.3337V15H33.3337C33.7757 15 34.1996 15.1756 34.5122 15.4882C34.8247 15.8007 35.0003 16.2246 35.0003 16.6667V31.6667ZM11.667 18.3333V21.6667H18.3337V18.3333H11.667ZM11.667 11.6667V15H18.3337V11.6667H11.667Z"
+                                    fill="white" />
+                            </svg>
+                            <p
+                                class="text-white font-semibold traking-[128%] lg:text-xl md:text-lg sm:text-base text-sm">
+                                Residential</p>
+                            <a class="text-white bg-[#D45E05] font-semibold leading-[128%] xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] rounded-xl group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                href="#">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider -->
+    <section>
+        <div class="flex justify-center">
+            <div
+                class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] w-full flex justify-center items-center lg:pt-[15px] md:pt-[12px] sm:pt-[9px] pt-[7px]">
+                <div
+                    class="max-w-[1150px] w-full flex flex-col xl:gap-[60px] lg:gap-[54px] md:gap-[48px] sm:gap-[40px] gap-[32px]">
+                    <div class="flex justify-center">
+                        <h2
+                            class="text-center lg:text-5xl md:text-4xl sm:text-3xl text-2xl max-w-[660px] leading-[140%] font-semibold">
+                            Explore Our
+                            Latest
+                            Featured
+                            Development</h2>
+                    </div>
+                    <div>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide group">
+                                    <div
+                                        class="bg-white rounded-xl overflow-hidden flex flex-col xl:gap-[16px] lg:gap-[14px] md:gap-[13px] sm:gap-[11px] gap-[10px]">
+                                        <div>
+                                            <img class="w-full" src="./assets/png/slider-bnglo.png" alt="banglo">
+                                        </div>
+                                        <div
+                                            class="flex flex-col xl:gap-[28px] lg:gap-[25px] md:gap-[21px] sm:gap-[18px] gap-[16px] xl:px-[20px] lg:px-[18px] md:px-[16px] sm:px-[16px] px-[14px] lg:pb-[20px] md:pb-[18px] sm:pb-[16px] pb-[14px]">
+                                            <div
+                                                class="flex flex-col xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[13px] gap-[11px]">
+                                                <div class="flex flex-col md:gap-[8px] gap-[6px]">
+                                                    <h3
+                                                        class="font-semibold leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-base">
+                                                        The Queen Inside</h3>
+                                                    <p
+                                                        class="flex gap-[10px] text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] lg:text-base md:text-[15px] sm:text-sm text-[13px]">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/slider_location.svg" alt="location">
+                                                        Sector
+                                                        3, Gurgaon
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="flex xl:gap-[31px] lg:gap-[25px] md:gap-[20px] sm:gap-[18px] gap-[14px]">
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/bed.svg" alt="bed">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/icon_bathroom.svg" alt="bathroom">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[10px] lg:w-[9px] md:w-[8.5px]"
+                                                            src="./assets/svg/inr.svg" alt="inr">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] whitespace-nowrap sm:text-sm text-xs">
+                                                            9.72 Cr*
+                                                            Ownward</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex hidden btn">
+                                                <a class="xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] text-white rounded-xl bg-[#D45E05] lg:text-base md:text-[15px] text-sm group-hover  group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out font-semibold leading-[128%] lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                                    href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide group">
+                                    <div
+                                        class="bg-white rounded-xl overflow-hidden flex flex-col xl:gap-[16px] lg:gap-[14px] md:gap-[13px] sm:gap-[11px] gap-[10px]">
+                                        <div>
+                                            <img class="w-full" src="./assets/png/slider-flt.png" alt="flt">
+                                        </div>
+                                        <div
+                                            class="flex flex-col xl:gap-[28px] lg:gap-[25px] md:gap-[21px] sm:gap-[18px] gap-[16px] xl:px-[20px] lg:px-[18px] md:px-[16px] sm:px-[16px] px-[14px] lg:pb-[20px] md:pb-[18px] sm:pb-[16px] pb-[14px]">
+                                            <div
+                                                class="flex flex-col xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[13px] gap-[11px]">
+                                                <div class="flex flex-col md:gap-[8px] gap-[6px]">
+                                                    <h3
+                                                        class="font-semibold leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-base">
+                                                        The Queen Inside</h3>
+                                                    <p
+                                                        class="flex gap-[10px] text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] lg:text-base md:text-[15px] sm:text-sm text-[13px]">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/slider_location.svg" alt="location">
+                                                        Sector
+                                                        3, Gurgaon
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="flex xl:gap-[31px] lg:gap-[25px] md:gap-[20px] sm:gap-[18px] gap-[14px]">
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/bed.svg" alt="bed">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/icon_bathroom.svg" alt="bathroom">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[10px] lg:w-[9px] md:w-[8.5px]"
+                                                            src="./assets/svg/inr.svg" alt="inr">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] whitespace-nowrap sm:text-sm text-xs">
+                                                            9.72 Cr*
+                                                            Ownward</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex hidden btn">
+                                                <a class="xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] text-white rounded-xl bg-[#D45E05] lg:text-base md:text-[15px] text-sm  group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all ease-in-out duration-800 leading-[128%] font-semibold lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                                    href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide group">
+                                    <div
+                                        class="bg-white rounded-xl overflow-hidden flex flex-col xl:gap-[16px] lg:gap-[14px] md:gap-[13px] sm:gap-[11px] gap-[10px]">
+                                        <div>
+                                            <img class="w-full" src="./assets/png/slider-vila.png" alt="vila">
+                                        </div>
+                                        <div
+                                            class="flex flex-col xl:gap-[28px] lg:gap-[25px] md:gap-[21px] sm:gap-[18px] gap-[16px] xl:px-[20px] lg:px-[18px] md:px-[16px] sm:px-[16px] px-[14px] lg:pb-[20px] md:pb-[18px] sm:pb-[16px] pb-[14px]">
+                                            <div
+                                                class="flex flex-col xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[13px] gap-[11px]">
+                                                <div class="flex flex-col md:gap-[8px] gap-[6px]">
+                                                    <h3
+                                                        class="font-semibold leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-base">
+                                                        The Queen Inside</h3>
+                                                    <p
+                                                        class="flex gap-[10px] text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] lg:text-base md:text-[15px] sm:text-sm text-[13px]">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/slider_location.svg" alt="location">
+                                                        Sector
+                                                        3, Gurgaon
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="flex xl:gap-[31px] lg:gap-[25px] md:gap-[20px] sm:gap-[18px] gap-[14px]">
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/bed.svg" alt="bed">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/icon_bathroom.svg" alt="bathroom">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[10px] lg:w-[9px] md:w-[8.5px]"
+                                                            src="./assets/svg/inr.svg" alt="inr">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] whitespace-nowrap sm:text-sm text-xs">
+                                                            9.72 Cr*
+                                                            Ownward</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex hidden btn">
+                                                <a class="xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] text-white rounded-xl bg-[#D45E05] lg:text-base md:text-[15px] text-sm group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out font-semibold leading-[128%] lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                                    href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide group">
+                                    <div
+                                        class="bg-white rounded-xl overflow-hidden flex flex-col xl:gap-[16px] lg:gap-[14px] md:gap-[13px] sm:gap-[11px] gap-[10px]">
+                                        <div>
+                                            <img class="w-full" src="./assets/png/slider-bnglo.png" alt="banglo">
+                                        </div>
+                                        <div
+                                            class="flex flex-col xl:gap-[28px] lg:gap-[25px] md:gap-[21px] sm:gap-[18px] gap-[16px] xl:px-[20px] lg:px-[18px] md:px-[16px] sm:px-[16px] px-[14px] lg:pb-[20px] md:pb-[18px] sm:pb-[16px] pb-[14px]">
+                                            <div
+                                                class="flex flex-col xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[13px] gap-[11px]">
+                                                <div class="flex flex-col md:gap-[8px] gap-[6px]">
+                                                    <h3
+                                                        class="font-semibold leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-base">
+                                                        The Queen Inside</h3>
+                                                    <p
+                                                        class="flex gap-[10px] text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] lg:text-base md:text-[15px] sm:text-sm text-[13px]">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/slider_location.svg" alt="location">
+                                                        Sector
+                                                        3, Gurgaon
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="flex xl:gap-[31px] lg:gap-[25px] md:gap-[20px] sm:gap-[18px] gap-[14px]">
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/bed.svg" alt="bed">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/icon_bathroom.svg" alt="bathroom">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[10px] lg:w-[9px] md:w-[8.5px]"
+                                                            src="./assets/svg/inr.svg" alt="inr">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] whitespace-nowrap sm:text-sm text-xs">
+                                                            9.72 Cr*
+                                                            Ownward</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex hidden btn">
+                                                <a class="xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] text-white rounded-xl bg-[#D45E05] lg:text-base md:text-[15px] text-sm  group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out font-semibold leading-[128%] lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                                    href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide group">
+                                    <div
+                                        class="bg-white rounded-xl overflow-hidden flex flex-col xl:gap-[16px] lg:gap-[14px] md:gap-[13px] sm:gap-[11px] gap-[10px]">
+                                        <div>
+                                            <img class="w-full" src="./assets/png/slider-flt.png" alt="flt">
+                                        </div>
+                                        <div
+                                            class="flex flex-col xl:gap-[28px] lg:gap-[25px] md:gap-[21px] sm:gap-[18px] gap-[16px] xl:px-[20px] lg:px-[18px] md:px-[16px] sm:px-[16px] px-[14px] lg:pb-[20px] md:pb-[18px] sm:pb-[16px] pb-[14px]">
+                                            <div
+                                                class="flex flex-col xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[13px] gap-[11px]">
+                                                <div class="flex flex-col md:gap-[8px] gap-[6px]">
+                                                    <h3
+                                                        class="font-semibold leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-base">
+                                                        The Queen Inside</h3>
+                                                    <p
+                                                        class="flex gap-[10px] text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] lg:text-base md:text-[15px] sm:text-sm text-[13px]">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/slider_location.svg" alt="location">
+                                                        Sector
+                                                        3, Gurgaon
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="flex xl:gap-[31px] lg:gap-[25px] md:gap-[20px] sm:gap-[18px] gap-[14px]">
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/bed.svg" alt="bed">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/icon_bathroom.svg" alt="bathroom">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[10px] lg:w-[9px] md:w-[8.5px]"
+                                                            src="./assets/svg/inr.svg" alt="inr">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] whitespace-nowrap sm:text-sm text-xs">
+                                                            9.72 Cr*
+                                                            Ownward</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex hidden btn">
+                                                <a class="xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] text-white rounded-xl bg-[#D45E05] lg:text-base md:text-[15px] text-sm group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out font-semibold leading-[128%] lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                                    href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide group">
+                                    <div
+                                        class="bg-white rounded-xl overflow-hidden flex flex-col xl:gap-[16px] lg:gap-[14px] md:gap-[13px] sm:gap-[11px] gap-[10px]">
+                                        <div>
+                                            <img class="w-full" src="./assets/png/slider-vila.png" alt="vila">
+                                        </div>
+                                        <div
+                                            class="flex flex-col xl:gap-[28px] lg:gap-[25px] md:gap-[21px] sm:gap-[18px] gap-[16px] xl:px-[20px] lg:px-[18px] md:px-[16px] sm:px-[16px] px-[14px] lg:pb-[20px] md:pb-[18px] sm:pb-[16px] pb-[14px]">
+                                            <div
+                                                class="flex flex-col xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[13px] gap-[11px]">
+                                                <div class="flex flex-col md:gap-[8px] gap-[6px]">
+                                                    <h3
+                                                        class="font-semibold leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-base">
+                                                        The Queen Inside</h3>
+                                                    <p
+                                                        class="flex gap-[10px] text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] lg:text-base md:text-[15px] sm:text-sm text-[13px]">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/slider_location.svg" alt="location">
+                                                        Sector
+                                                        3, Gurgaon
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="flex xl:gap-[31px] lg:gap-[25px] md:gap-[20px] sm:gap-[18px] gap-[14px]">
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/bed.svg" alt="bed">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[20px] lg:w-[18px] md:w-[17px]"
+                                                            src="./assets/svg/icon_bathroom.svg" alt="bathroom">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] sm:text-sm text-xs">
+                                                            2</p>
+                                                    </div>
+                                                    <div class="flex gap-[8px] items-center">
+                                                        <img class="xl:w-[10px] lg:w-[9px] md:w-[8.5px]"
+                                                            src="./assets/svg/inr.svg" alt="inr">
+                                                        <p
+                                                            class="text-[rgba(0,0,0,0.70)] font-semibold leading-[140%] whitespace-nowrap sm:text-sm text-xs">
+                                                            9.72 Cr*
+                                                            Ownward</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex hidden btn">
+                                                <a class="xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] text-white rounded-xl bg-[#D45E05] lg:text-base md:text-[15px] text-sm group-hover:bg-white group-hover:text-[#D45E05] group-hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out font-semibold leading-[128%] lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                                    href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:block relative">
+                        <div class="lg:!w-[60px] md:!w-[50px] absolute !top-[-300px] !right-[-30px]">
+                            <svg class="swiper-button-next !w-full group transition-all ease-in-out duration-800"
+                                xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="none">
+                                <rect width="59" height="59" fill="#D45E05" />
+                                <rect width="59" height="59" stroke="white" />
+                                <path
+                                    d="M46.7071 30.7071C47.0976 30.3166 47.0976 29.6834 46.7071 29.2929L40.3431 22.9289C39.9526 22.5384 39.3195 22.5384 38.9289 22.9289C38.5384 23.3195 38.5384 23.9526 38.9289 24.3431L44.5858 30L38.9289 35.6569C38.5384 36.0474 38.5384 36.6805 38.9289 37.0711C39.3195 37.4616 39.9526 37.4616 40.3431 37.0711L46.7071 30.7071ZM15 31H46V29H15V31Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div>
+                            <svg class="swiper-button-prev lg:!w-[60px] md:!w-[50px] absolute !top-[-300px] !left-[-30px] group transition-all duration-800 ease-in-out"
+                                xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="none">
+                                <rect class="group-hover:fill-white transition-all ease-in-out duration-800" x="0.5"
+                                    y="0.5" width="59" height="59" rx="3.5" fill="#D45E05" />
+                                <rect class="group-hover:stroke-[#D45E05] transition-all ease-in-out duration-800"
+                                    x="0.5" y="0.5" width="59" height="59" rx="3.5" stroke="white" />
+                                <path class="group-hover:fill-[#D45E05] transition-all ease-in-out duration-800"
+                                    d="M18.2929 30.7071C17.9024 30.3166 17.9024 29.6834 18.2929 29.2929L24.6569 22.9289C25.0474 22.5384 25.6805 22.5384 26.0711 22.9289C26.4616 23.3195 26.4616 23.9526 26.0711 24.3431L20.4142 30L26.0711 35.6569C26.4616 36.0474 26.4616 36.6805 26.0711 37.0711C25.6805 37.4616 25.0474 37.4616 24.6569 37.0711L18.2929 30.7071ZM41 31H19V29H41V31Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- work -->
+    <section>
+        <div
+            class="bg-black flex justify-center lg:mt-[-355px] md:mt-[-340px] sm:mt-[-280px] mt-[-250px] lg:py-[490px_70px] md:py-[410px_65px] sm:py-[400px_60px] py-[330px_52px]">
+            <div
+                class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] w-full flex flex-col lg:gap-[270px] md:gap-[200px] sm:gap-[145px] min-[500px]:gap-[105px] gap-[100px]">
+                <div class="">
+                    <h2
+                        class="text-center text-white font-semibold leading-[140%] lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
+                        How It Works</h2>
+                </div>
+                <div class="relative">
+                    <div>
+                        <input class="peer hidden" type="radio" name="option" id="house" checked>
+                        <div
+                            class="lg:p-[26px] md:p-[20px] sm:p-[12px] min-[500px]:p-[10px] p-[8px] xl:max-w-[100px] lg:max-w-[90px] md:max-w-[80px] sm:max-w-[55px] min-[500px]:max-w-[50px] max-w-[45px] w-full bg-white peer-checked:bg-[#D45E05] absolute xl:top-[-45%] lg:top-[-42%] md:top-[-40%] sm:top-[-35%] min-[400px]:top-[-29%] min-[400px]:left-[4.5%] lg:left-[8%] md:left-[7%] sm:left-[5%] top-[-80px] left-[4%] rounded-sm flex justify-center items-center cursor-pointer hover:bg-[#D45E05] transition-all ease-in-out duration-800 z-10">
+                            <label class="cursor-pointer" for="house">
+                                <svg class="xl:w-[48px] lg:w-[42px] md:w-[38px] sm:w-[30px] min-[400px]:w-[25px] w-[23px]"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                                    <path class="fill-[#000] peer-checked:fill-white"
+                                        d="M45 38.9999H42V25.4999L42.4388 25.9387C42.7207 26.2201 43.1029 26.3781 43.5013 26.3777C43.8997 26.3774 44.2817 26.2188 44.5631 25.9368C44.8446 25.6549 45.0025 25.2726 45.0022 24.8742C45.0018 24.4758 44.8432 24.0939 44.5612 23.8124L26.1206 5.37744C25.5581 4.81525 24.7953 4.49945 24 4.49945C23.2047 4.49945 22.4419 4.81525 21.8794 5.37744L3.43875 23.8124C3.15754 24.0939 2.99965 24.4755 2.99983 24.8734C3 25.2713 3.15823 25.6528 3.43969 25.934C3.72115 26.2152 4.10279 26.3731 4.50066 26.3729C4.89853 26.3727 5.28004 26.2145 5.56125 25.9331L6 25.4999V38.9999H3C2.60218 38.9999 2.22064 39.158 1.93934 39.4393C1.65804 39.7206 1.5 40.1021 1.5 40.4999C1.5 40.8978 1.65804 41.2793 1.93934 41.5606C2.22064 41.8419 2.60218 41.9999 3 41.9999H45C45.3978 41.9999 45.7794 41.8419 46.0607 41.5606C46.342 41.2793 46.5 40.8978 46.5 40.4999C46.5 40.1021 46.342 39.7206 46.0607 39.4393C45.7794 39.158 45.3978 38.9999 45 38.9999ZM9 22.4999L24 7.49994L39 22.4999V38.9999H30V28.4999C30 28.1021 29.842 27.7206 29.5607 27.4393C29.2794 27.158 28.8978 26.9999 28.5 26.9999H19.5C19.1022 26.9999 18.7206 27.158 18.4393 27.4393C18.158 27.7206 18 28.1021 18 28.4999V38.9999H9V22.4999ZM27 38.9999H21V29.9999H27V38.9999Z" />
+                                </svg>
+                            </label>
+                        </div>
+                        <p
+                            class="text-white font-normal peer-checked:font-semibold leading-[140%] sm:left-[2%] xl:text-xl lg:text-lg md:text-base sm:text-sm min-[500px]:text-xs text-[10px] absolute lg:left-[7%] md:left-[5%] md:top-[-19%] sm:top-[-18%] min-[400px]:top-[-12%] top-[-35px] text-center max-[400px]:max-w-[70px]">
+                            Discover House
+                        </p>
+                        <div class="hidden peer-checked:block">
+                            <div
+                                class="bg-[url('./assets/png/home-img.png')] bg-no-repeat bg-center bg-cover flex justify-end lg:px-[40px] md:px-[32px] sm:px-[24px] px-[16px] lg:py-[70px] md:py-[58px] sm:py-[45px] py-[32px] rounded-xl">
+                                <div
+                                    class="flex flex-col bg-white w-full lg:max-w-[477px] md:max-w-[407px] sm:max-w-[390px] max-w-[320px] lg:py-[30px] md:py-[27px] sm:py-[23px] py-[18px] lg:px-[30px_38px] md:px-[28px_35px] sm:px-[25px_30px] px-[20px_24px] lg:gap-[40px] md:gap-[32px] sm:gap-[25px] gap-[20px] rounded-xl">
+                                    <div class="flex flex-col lg:gap-[15px] md:gap-[13px] sm:gap-[10px] gap-[8px]">
+                                        <h3
+                                            class="lg:text-[28px] md:text-2xl sm:text-xl text-lg font-semibold leading-[140%]">
+                                            Find The
+                                            Perfect House
+                                        </h3>
+                                        <p
+                                            class="text-[rgba(0,0,0,0.70)] font-normal leading-[155%] lg:text-base md:text-[15px] sm:text-sm text-[13px]">
+                                            we offer expert guidance every
+                                            step of the way
+                                            to ensure
+                                            your
+                                            home-buying
+                                            journey is
+                                            seamless
+                                            Our team is dedicated to making sure you find a place where you can create
+                                            lasting
+                                            memories.
+                                            Let us help you turn your
+                                            vision into reality!</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center md:gap-[15px] sm:gap-[10px] gap-[8px]">
+                                            <button
+                                                class="border lg:p-[11px_10px] md:p-[9px] sm:p-[6px] p-[5px] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%] font-semibold">1/4</button>
+                                            <p
+                                                class="text-[rgba(0,0,0,0.70)] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%] font-semibold">
+                                                Discover House</p>
+                                        </div>
+                                        <div>
+                                            <button
+                                                class="text-[#D45E05] lg:text-base md:text-[15px] sm:text-sm text-xs cursor-pointer hover:text-black transition-all duration-500 ease-in-out">Next></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="peer hidden" type="radio" name="option" id="visit">
+                        <div
+                            class="lg:p-[26px] md:p-[20px] sm:p-[12px] min-[500px]:p-[10px] p-[8px] xl:max-w-[100px] lg:max-w-[90px] md:max-w-[80px] sm:max-w-[55px] min-[400px]:max-w-[50px] max-w-[40px] flex justify-center items-center w-full bg-white peer-checked:bg-[#D45E05] absolute xl:top-[-45%] lg:top-[-42%] md:top-[-40%] sm:top-[-35%] lg:left-[32%] sm:left-[30%] md:left-[31%] min-[400px]:top-[-29%] min-[400px]:left-[31%] top-[-80px] left-[29%] rounded-sm cursor-pointer hover:bg-[#D45E05] transition-all ease-in-out duration-800 z-10">
+                            <label class="cursor-pointer" for="visit">
+                                <svg class="xl:w-[48px] lg:w-[42px] md:w-[38px] sm:w-[30px] min-[400px]:w-[25px] w-[23px]"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                                    <path class="fill-[#000] peer-checked:fill-white"
+                                        d="M24 28C24.3956 28 24.7822 27.8827 25.1111 27.6629C25.44 27.4432 25.6964 27.1308 25.8478 26.7654C25.9991 26.3999 26.0387 25.9978 25.9616 25.6098C25.8844 25.2219 25.6939 24.8655 25.4142 24.5858C25.1345 24.3061 24.7781 24.1156 24.3902 24.0384C24.0022 23.9613 23.6001 24.0009 23.2346 24.1522C22.8692 24.3036 22.5568 24.56 22.3371 24.8889C22.1173 25.2178 22 25.6044 22 26C22 26.5304 22.2107 27.0391 22.5858 27.4142C22.9609 27.7893 23.4696 28 24 28ZM34 28C34.3956 28 34.7822 27.8827 35.1111 27.6629C35.44 27.4432 35.6964 27.1308 35.8478 26.7654C35.9991 26.3999 36.0387 25.9978 35.9616 25.6098C35.8844 25.2219 35.6939 24.8655 35.4142 24.5858C35.1345 24.3061 34.7781 24.1156 34.3902 24.0384C34.0022 23.9613 33.6001 24.0009 33.2346 24.1522C32.8692 24.3036 32.5568 24.56 32.3371 24.8889C32.1173 25.2178 32 25.6044 32 26C32 26.5304 32.2107 27.0391 32.5858 27.4142C32.9609 27.7893 33.4696 28 34 28ZM24 36C24.3956 36 24.7822 35.8827 25.1111 35.6629C25.44 35.4432 25.6964 35.1308 25.8478 34.7654C25.9991 34.3999 26.0387 33.9978 25.9616 33.6098C25.8844 33.2219 25.6939 32.8655 25.4142 32.5858C25.1345 32.3061 24.7781 32.1156 24.3902 32.0384C24.0022 31.9613 23.6001 32.0009 23.2346 32.1522C22.8692 32.3036 22.5568 32.56 22.3371 32.8889C22.1173 33.2178 22 33.6044 22 34C22 34.5304 22.2107 35.0391 22.5858 35.4142C22.9609 35.7893 23.4696 36 24 36ZM34 36C34.3956 36 34.7822 35.8827 35.1111 35.6629C35.44 35.4432 35.6964 35.1308 35.8478 34.7654C35.9991 34.3999 36.0387 33.9978 35.9616 33.6098C35.8844 33.2219 35.6939 32.8655 35.4142 32.5858C35.1345 32.3061 34.7781 32.1156 34.3902 32.0384C34.0022 31.9613 33.6001 32.0009 33.2346 32.1522C32.8692 32.3036 32.5568 32.56 32.3371 32.8889C32.1173 33.2178 32 33.6044 32 34C32 34.5304 32.2107 35.0391 32.5858 35.4142C32.9609 35.7893 33.4696 36 34 36ZM14 28C14.3956 28 14.7822 27.8827 15.1111 27.6629C15.44 27.4432 15.6964 27.1308 15.8478 26.7654C15.9991 26.3999 16.0387 25.9978 15.9616 25.6098C15.8844 25.2219 15.6939 24.8655 15.4142 24.5858C15.1345 24.3061 14.7781 24.1156 14.3902 24.0384C14.0022 23.9613 13.6001 24.0009 13.2346 24.1522C12.8692 24.3036 12.5568 24.56 12.3371 24.8889C12.1173 25.2178 12 25.6044 12 26C12 26.5304 12.2107 27.0391 12.5858 27.4142C12.9609 27.7893 13.4696 28 14 28ZM38 8H36V6C36 5.46957 35.7893 4.96086 35.4142 4.58579C35.0391 4.21071 34.5304 4 34 4C33.4696 4 32.9609 4.21071 32.5858 4.58579C32.2107 4.96086 32 5.46957 32 6V8H16V6C16 5.46957 15.7893 4.96086 15.4142 4.58579C15.0391 4.21071 14.5304 4 14 4C13.4696 4 12.9609 4.21071 12.5858 4.58579C12.2107 4.96086 12 5.46957 12 6V8H10C8.4087 8 6.88258 8.63214 5.75736 9.75736C4.63214 10.8826 4 12.4087 4 14V38C4 39.5913 4.63214 41.1174 5.75736 42.2426C6.88258 43.3679 8.4087 44 10 44H38C39.5913 44 41.1174 43.3679 42.2426 42.2426C43.3679 41.1174 44 39.5913 44 38V14C44 12.4087 43.3679 10.8826 42.2426 9.75736C41.1174 8.63214 39.5913 8 38 8ZM40 38C40 38.5304 39.7893 39.0391 39.4142 39.4142C39.0391 39.7893 38.5304 40 38 40H10C9.46957 40 8.96086 39.7893 8.58579 39.4142C8.21071 39.0391 8 38.5304 8 38V20H40V38ZM40 16H8V14C8 13.4696 8.21071 12.9609 8.58579 12.5858C8.96086 12.2107 9.46957 12 10 12H38C38.5304 12 39.0391 12.2107 39.4142 12.5858C39.7893 12.9609 40 13.4696 40 14V16ZM14 36C14.3956 36 14.7822 35.8827 15.1111 35.6629C15.44 35.4432 15.6964 35.1308 15.8478 34.7654C15.9991 34.3999 16.0387 33.9978 15.9616 33.6098C15.8844 33.2219 15.6939 32.8655 15.4142 32.5858C15.1345 32.3061 14.7781 32.1156 14.3902 32.0384C14.0022 31.9613 13.6001 32.0009 13.2346 32.1522C12.8692 32.3036 12.5568 32.56 12.3371 32.8889C12.1173 33.2178 12 33.6044 12 34C12 34.5304 12.2107 35.0391 12.5858 35.4142C12.9609 35.7893 13.4696 36 14 36Z" />
+                                </svg>
+                            </label>
+                        </div>
+                        <p
+                            class="text-white absolute md:top-[-19%] sm:top-[-18%] xl:left-[29%] lg:left-[28%] md:left-[27.5%] font-normal peer-checked:font-semibold leading-[140%] sm:left-[25%] xl:text-xl lg:text-lg md:text-base sm:text-sm min-[500px]:text-xs text-[10px] max-[690px]:max-w-[110px] max-[500px]:max-w-[75px] min-[400px]:top-[-12%] min-[400px]:left-[28%] top-[-35px] left-[23%] text-center">
+                            Schedule To Visit</p>
+                        <div class="hidden peer-checked:block">
+                            <div
+                                class="bg-[url('./assets/png/visit-img.png')] bg-no-repeat bg-center bg-cover flex justify-end lg:px-[40px] md:px-[32px] sm:px-[24px] px-[16px] lg:py-[70px] md:py-[58px] sm:py-[45px] py-[32px] rounded-xl">
+                                <div
+                                    class="flex flex-col bg-white w-full lg:max-w-[477px] md:max-w-[407px] sm:max-w-[390px] max-w-[320px] lg:py-[30px] md:py-[27px] sm:py-[23px] py-[18px] lg:px-[30px_38px] md:px-[28px_35px] sm:px-[25px_30px] px-[20px_24px] lg:gap-[40px] md:gap-[32px] sm:gap-[25px] gap-[20px] rounded-xl">
+                                    <div class="flex flex-col lg:gap-[15px] md:gap-[13px] sm:gap-[10px] gap-[8px]">
+                                        <h3
+                                            class="lg:text-[28px] md:text-2xl sm:text-xl text-lg font-semibold leading-[140%]">
+                                            Schedule To Visit</h3>
+                                        <p
+                                            class="text-[rgba(0,0,0,0.70)] font-normal leading-[155%] lg:text-base md:text-[15px] sm:text-sm text-[13px] max-w-[386px] w-full">
+                                            "Ready to take the next step? Schedule a tour today and see the property in
+                                            person. Our agents are happy to show you
+                                            around, answer your questions, and help you envision yourself in the space.
+                                        </p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center md:gap-[15px] sm:gap-[10px] gap-[8px]">
+                                            <button
+                                                class="border lg:p-[11px_10px] md:p-[9px] sm:p-[6px] p-[5px] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%] font-semibold">2/4</button>
+                                            <p
+                                                class="text-[rgba(0,0,0,0.70)] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%] font-semibold">
+                                                Schedule To Visit</p>
+                                        </div>
+                                        <div>
+                                            <button
+                                                class="text-[#D45E05] lg:text-base md:text-[15px] sm:text-sm text-xs cursor-pointer hover:text-black transition-all ease-in-out duration-500">Next></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="peer hidden" type="radio" name="option" id="free">
+                        <div
+                            class="lg:p-[26px] md:p-[20px] sm:p-[12px] min-[400px]:p-[10px] p-[8px] xl:max-w-[100px] lg:max-w-[90px] md:max-w-[80px] sm:max-w-[55px] min-[400px]:max-w-[50px] max-w-[40px] flex justify-center items-center w-full bg-white peer-checked:bg-[#D45E05] absolute xl:top-[-45%] lg:top-[-42%] md:top-[-40%] sm:top-[-35%] lg:right-[33%] md:right-[31%] sm:right-[30%] min-[400px]:top-[-29%] min-[400px]:right-[30%] top-[-80px] right-[29%] rounded-sm cursor-pointer hover:bg-[#D45E05] transition-all duration-800 ease-in-out z-10">
+                            <label class="cursor-pointer" for="free">
+                                <svg class="xl:w-[48px] lg:w-[42px] md:w-[38px] sm:w-[30px] min-[400px]:w-[25px] w-[23px]"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                                    <path class="stroke-[#000] peer-checked:stroke-white"
+                                        d="M34 16V10C34 9.46957 33.7893 8.96086 33.4142 8.58579C33.0391 8.21071 32.5304 8 32 8H12C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12M8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16H36C36.5304 16 37.0391 16.2107 37.4142 16.5858C37.7893 16.9609 38 17.4696 38 18V24M8 12V36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40H36C36.5304 40 37.0391 39.7893 37.4142 39.4142C37.7893 39.0391 38 38.5304 38 38V32"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path class="stroke-[#000] peer-checked:stroke-white"
+                                        d="M40 24V32H32C30.9391 32 29.9217 31.5786 29.1716 30.8284C28.4214 30.0783 28 29.0609 28 28C28 26.9391 28.4214 25.9217 29.1716 25.1716C29.9217 24.4214 30.9391 24 32 24H40Z"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </label>
+                        </div>
+                        <p
+                            class="text-white absolute md:top-[-19%] sm:top-[-18%] xl:right-[28.5%] lg:right-[30%] md:right-[26.5%] font-normal peer-checked:font-semibold leading-[140%] lg:right-[6%] md:right-[4%] sm:right-[23%] xl:text-xl lg:text-lg md:text-base sm:text-sm min-[500px]:text-xs text-[10px] max-[690px]:max-w-[140px] max-[520px]:max-w-[85px] min-[400px]:top-[-12%] min-[400px]:right-[25%] top-[-35px] right-[24%] max-[400px]:max-w-[65px] text-center">
+                            Hassle- Free Purchase</p>
+                        <div class="hidden peer-checked:block">
+                            <div
+                                class="bg-[url('./assets/png/free-img.png')] bg-no-repeat bg-center bg-cover flex justify-end lg:px-[40px] md:px-[32px] sm:px-[24px] px-[16px] lg:py-[70px] md:py-[58px] sm:py-[45px] py-[32px] rounded-xl">
+                                <div
+                                    class="flex flex-col bg-white w-full lg:max-w-[477px] md:max-w-[407px] sm:max-w-[390px] max-w-[320px] lg:py-[30px] md:py-[27px] sm:py-[23px] py-[18px] lg:px-[30px_38px] md:px-[28px_35px] sm:px-[25px_30px] px-[20px_24px] lg:gap-[40px] md:gap-[32px] sm:gap-[25px] gap-[20px] rounded-xl">
+                                    <div class="flex flex-col lg:gap-[15px] md:gap-[13px] sm:gap-[10px] gap-[8px]">
+                                        <h3
+                                            class="lg:text-[28px] md:text-2xl sm:text-xl text-lg font-semibold leading-[140%]">
+                                            Hassle Free Purchase
+                                        </h3>
+                                        <p
+                                            class="text-[rgba(0,0,0,0.70)] font-normal leading-[155%] lg:text-base md:text-[15px] sm:text-sm text-[13px]">
+                                            It offers a stress-free way to find their next property, book a visit, and
+                                            move
+                                            forward in the buying/renting process.
+                                            This concept not only improves user experience but also increases the
+                                            likelihood
+                                            of conversion, as people appreciate
+                                            convenience.</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center md:gap-[15px] sm:gap-[10px] gap-[8px]">
+                                            <button
+                                                class="border lg:p-[11px_10px] md:p-[9px] sm:p-[6px] p-[5px] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%] font-semibold">3/4</button>
+                                            <p
+                                                class="text-[rgba(0,0,0,0.70)] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%] font-semibold">
+                                                Hassle Free Space</p>
+                                        </div>
+                                        <div>
+                                            <button
+                                                class="text-[#D45E05] lg:text-base md:text-[15px] sm:text-sm text-xs cursor-pointer hover:text-black transition-all ease-in-out duration-500">Next></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="peer hidden" type="radio" name="option" id="back">
+                        <div
+                            class="lg:p-[26px] md:p-[20px] sm:p-[12px] min-[400px]:p-[10px] p-[8px] xl:max-w-[100px] lg:max-w-[90px] md:max-w-[80px] sm:max-w-[55px] min-[400px]:max-w-[50px] max-w-[40px] flex justify-center items-center w-full bg-white peer-checked:bg-[#D45E05] absolute xl:top-[-45%] lg:top-[-42%] md:top-[-40%] sm:top-[-35%] lg:right-[8%] md:right-[7%] sm:right-[5%] min-[400px]:top-[-29%] min-[400px]:right-[6%] top-[-80px] right-[4%] rounded-sm cursor-pointer hover:bg-[#D45E05] transition-all ease-in-out duration-800 z-10">
+                            <label class="cursor-pointer" for="back">
+                                <svg class="xl:w-[48px] lg:w-[42px] md:w-[38px] sm:w-[30px] min-[400px]:w-[25px] w-[23px]"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+                                    <path class="stroke-[#000] peer-checked:stroke-white" d="M6 15H42L40 42H8L6 15Z"
+                                        stroke-width="3" stroke-linejoin="round" />
+                                    <path class="stroke-[#000] peer-checked:stroke-white" d="M16 19V6H32V19"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path class="stroke-[#000] peer-checked:stroke-white" d="M16 34H32" stroke-width="3"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="hidden peer-checked:block">
+                            <div
+                                class="bg-[url('./assets/png/buy-back.png')] bg-no-repeat bg-center bg-cover flex justify-end lg:px-[40px] md:px-[32px] sm:px-[24px] px-[16px] lg:py-[70px] md:py-[58px] sm:py-[45px] py-[32px] rounded-xl">
+                                <div
+                                    class="flex flex-col bg-white w-full lg:max-w-[477px] md:max-w-[407px] sm:max-w-[390px] max-w-[320px] lg:py-[30px] md:py-[27px] sm:py-[23px] py-[18px] lg:px-[30px_38px] md:px-[28px_35px] sm:px-[25px_30px] px-[20px_24px] lg:gap-[40px] md:gap-[32px] sm:gap-[25px] gap-[20px] rounded-xl">
+                                    <div class="flex flex-col lg:gap-[15px] md:gap-[13px] sm:gap-[10px] gap-[8px]">
+                                        <h3
+                                            class="lg:text-[28px] md:text-2xl sm:text-xl text-lg font-semibold leading-[140%]">
+                                            Buyback Guarantee
+                                        </h3>
+                                        <p
+                                            class="text-[rgba(0,0,0,0.70)] font-normal leading-[155%] lg:text-base md:text-[15px] sm:text-sm text-[13px]">
+                                            It is a powerful tool in making buyers feel safe and supported, especially
+                                            when
+                                            making such a significant financial
+                                            decision like purchasing a home This reduces the risk for the buyer and
+                                            encourages confidence in their purchase decision.</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex items-center md:gap-[15px] sm:gap-[10px] gap-[8px]">
+                                            <button
+                                                class="border lg:p-[11px_10px] md:p-[9px] sm:p-[6px] p-[5px] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%] font-semibold">4/4</button>
+                                            <p
+                                                class="text-[rgba(0,0,0,0.70)] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%] font-semibold">
+                                                Buyback Guarantee</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p
+                            class="absolute text-white md:top-[-19%] sm:top-[-18%] font-normal peer-checked:font-semibold leading-[140%] xl:right-[5%] lg:right-[6%] md:right-[3%] right-0 xl:text-xl lg:text-lg md:text-base sm:text-sm min-[500px]:text-xs text-[10px] min-[400px]:top-[-12%] max-[520px]:max-w-[95px] text-center top-[-35px] right-0 max-[400px]:max-w-[65px] ">
+                            Buyback Guarantee</p>
+                    </div>
+                    <div
+                        class="absolute w-full md:top-[-33%] sm:top-[-27%] min-[400px]:top-[-21.5%] top-[-60px] flex justify-center">
+                        <div class="border-t border-white w-[80%]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- states -->
+    <section>
+        <div class="flex justify-center">
+            <div
+                class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] w-full flex flex-col xl:gap-[62px] lg:gap-[55px] md:gap-[48px] sm:gap-[32px] gap-[25px] xl:py-[75px_155px] lg:py-[68px_148px] md:py-[60px_135px] sm:py-[52px_105px] py-[45px_95px]">
+                <div class="flex justify-center">
+                    <h2
+                        class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-semibold leading-[140%] w-full max-w-[660px] text-center">
+                        Discover The
+                        Most
+                        Popular
+                        Destinations</h2>
+                </div>
+                <div
+                    class="grid lg:grid-cols-[auto_auto_auto_auto_auto] sm:grid-cols-2 grid-cols-1 lg:gap-[18px] md:gap-[16px] gap-[10px]">
+                    <div
+                        class="w-full lg:max-w-[215px] h-[400px] overflow-hidden rounded-xl hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 ease-in-out sm:row-span-2 min-[640px]:h-full relative cursor-pointer">
+                        <a href="#">
+                            <img class="w-full h-full bg-cover bg-center" src="./assets/png/gurgaon.png" alt="Gurgaon">
+                        </a>
+                        <div
+                            class="flex flex-col items-center gap-[5px] absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
+                            <h3
+                                class="text-white leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold">
+                                Gurgaon</h3>
+                            <p
+                                class="text-white leading-[140%] lg:text-xl md:text-lg sm:text-base text-sm whitespace-nowrap">
+                                15 + Property
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-[215px] h-[200px] overflow-hidden rounded-xl hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 ease-in-out relative min-[640px]:h-full cursor-pointer">
+                        <a href="#"><img class="w-full h-full" src="./assets/png/delhi.png" alt="Delhi"></a>
+                        <div
+                            class="flex flex-col items-center gap-[5px] absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
+                            <h3
+                                class="text-white leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold">
+                                Delhi</h3>
+                            <p
+                                class="text-white leading-[140%] lg:text-xl md:text-lg sm:text-base text-sm whitespace-nowrap">
+                                12 + Property
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-[215px] h-[400px] overflow-hidden rounded-xl hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 ease-in-out sm:row-span-2 row-span-1 min-[640px]:h-full relative cursor-pointer">
+                        <a href="#"><img class="w-full h-full" src="./assets/png/mumbai.png" alt="mumbai"></a>
+                        <div
+                            class="flex flex-col items-center gap-[5px] absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
+                            <h3
+                                class="text-white leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold">
+                                Mumbai</h3>
+                            <p
+                                class="text-white leading-[140%] lg:text-xl md:text-lg sm:text-base text-sm whitespace-nowrap">
+                                20 + Property
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-[215px] h-[200px] overflow-hidden rounded-xl hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 ease-in-out relative min-[640px]:h-full cursor-pointer">
+                        <a href="#"><img class="w-full h-full" src="./assets/png/banglor.png" alt="banglo"></a>
+                        <div
+                            class="flex flex-col items-center gap-[5px] absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
+                            <h3
+                                class="text-white leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold">
+                                Banglore</h3>
+                            <p
+                                class="text-white leading-[140%] lg:text-xl md:text-lg sm:text-base text-sm whitespace-nowrap">
+                                20 + Property
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-[215px] h-[400px] overflow-hidden rounded-xl hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 ease-in-out sm:row-span-2 row-span-1 min-[640px]:h-full relative cursor-pointer">
+                        <a href="#"><img class="w-full h-full" src="./assets/png/pune.png" alt="pune"></a>
+                        <div
+                            class="flex flex-col items-center gap-[5px] absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
+                            <h3
+                                class="text-white leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold">
+                                Pune</h3>
+                            <p
+                                class="text-white leading-[140%] lg:text-xl md:text-lg sm:text-base text-sm whitespace-nowrap">
+                                8 + Property
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-[215px] h-[200px] overflow-hidden rounded-xl hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 ease-in-out relative min-[640px]:h-full cursor-pointer">
+                        <a href="#"><img class="w-full h-full" src="./assets/png/noida.png" alt="noida"></a>
+                        <div
+                            class="flex flex-col items-center gap-[5px] absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
+                            <h3
+                                class="text-white leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold">
+                                Noida</h3>
+                            <p
+                                class="text-white leading-[140%] lg:text-xl md:text-lg sm:text-base text-sm whitespace-nowrap">
+                                10 + Property
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full lg:max-w-[215px] h-[200px] overflow-hidden rounded-xl hover:shadow-[6px_6px_18px_#D45E05] transition-all duration-800 ease-in-out relative min-[640px]:h-full cursor-pointer">
+                        <a href="#"><img class="w-full h-full" src="./assets/png/panchkula.png" alt="panchkula"></a>
+                        <div
+                            class="flex flex-col items-center gap-[5px] absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
+                            <h3
+                                class="text-white leading-[140%] lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold">
+                                Panchkula</h3>
+                            <p
+                                class="text-white leading-[140%] lg:text-xl md:text-lg sm:text-base text-sm whitespace-nowrap">
+                                10 + Property
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Choose Us -->
+    <section>
+        <div class="flex justify-center bg-white lg:py-[50px] md:py-[42px] sm:py-[32px] py-[26px]">
+            <div
+                class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] w-full flex xl:gap-[47px] lg:gap-[42px] md:gap-[38px] sm:gap-[36px] gap-[24px] md:flex-nowrap flex-wrap">
+                <div class="grid grid-cols-4 lg:gap-[23px] md:gap-[20px] gap-[18px]">
+                    <div class="col-span-1"><img class="w-full h-full bg-cover bg-center" src="./assets/png/us-flat.png"
+                            alt="us-flat">
+                    </div>
+                    <div class=" col-span-3"><img class="w-full h-full bg-cover bg-center"
+                            src="./assets/png/us-banglo.png" alt="banglo">
+                    </div>
+                    <div class="col-span-4 rounded-xl overflow-hidden"><img class="w-full h-full bg-cover bg-center"
+                            src="./assets/png/slider-vila.png" alt="vila">
+                    </div>
+                </div>
+                <div class="flex flex-col xl:gap-[59px] lg:gap-[48px] md:gap-[42px] sm:gap-[38px] gap-[32px]">
+                    <div>
+                        <h3 class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-semibold leading-[140%]">Why Choose
+                            Us
+                        </h3>
+                        <p
+                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] max-w-[478px] text-[rgba(0,0,0,0.70)]">
+                            Our team is dedicated to
+                            making
+                            sure
+                            you find a place where you can create lasting memories. Let
+                            us help you turn your
+                            vision into reality!</p>
+                    </div>
+                    <div class="flex flex-col lg:gap-[30px] md:gap-[27px] sm:gap-[23px] gap-[18px]">
+                        <div
+                            class="flex lg:gap-[32px] md:gap-[28px] sm:gap-[22px] gap-[16px] hover:bg-[#F0F5FF] transition-all ease-in-out duration-800 group p-[15px_20px] cursor-pointer rounded-xl">
+                            <div class="w-full lg:max-w-[50px] md:max-w-[40px] sm:max-w-[35px] max-w-[30px]">
+                                <div
+                                    class="bg-[#F0F5FF] group-hover:bg-white transition-all duration-800 ease-in-out p-[5px_6px] rounded-md w-full">
+                                    <img class="md:w-[40px] sm:w-[38px] w-[36px] object-cover"
+                                        src="./assets/svg/symbols_house-.svg" alt="house">
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:gap-[12px] sm:gap-[10px] gap-[8px]">
+                                <h4 class="lg:text-2xl md:text-xl sm:text-lg text-base font-semibold leading-[126.6%]">
+                                    Easy
+                                    Consultation</h4>
+                                <p class="text-[rgba(0,0,0,0.70)]">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex lg:gap-[32px] md:gap-[28px] sm:gap-[22px] gap-[16px] hover:bg-[#F0F5FF] transition-all duration-800 ease-in-out group p-[15px_20px] cursor-pointer rounded-xl">
+                            <div class="w-full lg:max-w-[50px] md:max-w-[40px] sm:max-w-[35px] max-w-[30px]">
+                                <div
+                                    class="bg-[#F0F5FF] group-hover:bg-white transition-all duration-800 ease-in-out p-[5px_6px] rounded-md w-full">
+                                    <img class=" md:w-[40px] sm:w-[38px] w-[36px] object-cover"
+                                        src="./assets/svg/house-up.svg" alt="house">
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:gap-[12px] sm:gap-[10px] gap-[8px]">
+                                <h4 class="lg:text-2xl md:text-xl sm:text-lg text-base font-semibold leading-[126.6%]">
+                                    Financial Assistance</h4>
+                                <p class="text-[rgba(0,0,0,0.70)]">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex lg:gap-[32px] md:gap-[28px] sm:gap-[22px] gap-[16px] transition-all duration-800 ease-in-out hover:bg-[#F0F5FF] group p-[15px_20px] cursor-pointer rounded-xl">
+                            <div class="w-full lg:max-w-[50px] md:max-w-[40px] sm:max-w-[35px] max-w-[30px]">
+                                <div
+                                    class="bg-[#F0F5FF] group-hover:bg-white p-[5px_6px] rounded-md w-full transition-all duration-800 ease-in-out">
+                                    <img class=" md:w-[40px] sm:w-[38px] w-[36px]" src="./assets/svg/support-agent.svg"
+                                        alt="house">
+                                </div>
+                            </div>
+                            <div class="flex flex-col md:gap-[12px] sm:gap-[10px] gap-[8px]">
+                                <h4 class="lg:text-2xl md:text-xl sm:text-lg text-base font-semibold leading-[126.6%]">
+                                    After Sale Assistance</h4>
+                                <p class="text-[rgba(0,0,0,0.70)]">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit, sed do eiusmod tempor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- custromer-slider -->
+    <section class="lg:py-[155px_74px] md:py-[125px_65px] sm:py-[95px_58px] py-[75px_48px]">
+        <div class="flex justify-center bg-[url('./assets/png/customer-slider-bg.png')]">
+            <div
+                class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] w-full flex xl:gap-[47px] lg:gap-[42px] md:gap-[38px] sm:gap-[36px] gap-[24px] md:flex-row flex-col">
+                <div class="max-w-[1240px] w-full px-4 md:px-8 mx-auto">
+                    <div class="flex flex-wrap min-[890px]:flex-nowrap items-center">
+                        <div
+                            class="min-[890px]:border-r max-[879px]:border-b w-full border-white lg:py-[87px] md:py-[70px] sm:py-[50px] py-[35px]">
+                            <div class="w-full">
+                                <h2
+                                    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[121%] text-white max-w-[523px] font-semibold">
+                                    Hear what our customers have to say
+                                </h2>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full min-[890px]:w-1/2 relative py-[20px] xl:pl-[32px] lg:pl-[28px] min-[890px]:pl-[25px]">
+                            <div class="swiper mySwiper-1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="flex flex-col lg:gap-[15px] md:gap-[13px] sm:gap-[11px] gap-[10px]">
+                                            <div
+                                                class="flex flex-col lg:gap-[30px] md:gap-[26px] sm:gap-[24px] gap-[20px]">
+                                                <div>
+                                                    <img class="lg:w-[45px] md:w-[42px] sm:w-[39px] w-[36px]"
+                                                        src="./assets/svg/“.svg" alt="quote">
+                                                </div>
+                                                <div class="min-[890px]:max-w-[489px]">
+                                                    <p
+                                                        class="text-white lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[143%] line-clamp-4">
+                                                        Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna
+                                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                        ullamco
+                                                        laboris nisi ut aliquip ex ea commodo consequat .</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex items-center lg:gap-[15px] md:gap-[13px] sm:gap-[11px] gap-[10px]">
+                                                <div>
+                                                    <img class="lg:w-[56px] md:w-[52px] sm:w-[48px] w-[45px]"
+                                                        src="./assets/svg/alexander.svg" alt="Alexander">
+                                                </div>
+                                                <h3
+                                                    class="lg:text-2xl md:text-xl sm:text-lg text-base font-semibold leading-[143%] text-white">
+                                                    Leslie Alexander
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="flex flex-col lg:gap-[15px] md:gap-[13px] sm:gap-[11px] gap-[10px]">
+                                            <div
+                                                class="flex flex-col lg:gap-[30px] md:gap-[26px] sm:gap-[24px] gap-[20px]">
+                                                <div>
+                                                    <img class="lg:w-[45px] md:w-[42px] sm:w-[39px] w-[36px]"
+                                                        src="./assets/svg/“.svg" alt="quote">
+                                                </div>
+                                                <div class="min-[890px]:max-w-[489px]">
+                                                    <p
+                                                        class="text-white lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[143%] line-clamp-4">
+                                                        Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna
+                                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                        ullamco
+                                                        laboris nisi ut aliquip ex ea commodo consequat .</p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex items-center lg:gap-[15px] md:gap-[13px] sm:gap-[11px] gap-[10px]">
+                                                <div>
+                                                    <img class="lg:w-[56px] md:w-[52px] sm:w-[48px] w-[45px]"
+                                                        src="./assets/svg/alexander.svg" alt="Alexander">
+                                                </div>
+                                                <h3
+                                                    class="lg:text-2xl md:text-xl sm:text-lg text-base font-semibold leading-[143%] text-white">
+                                                    Leslie Alexander
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="min-[890px]:block hidden">
+                                    <div class="absolute -translate-y-1/2 bottom-[-15px] md:right-[65px] z-10">
+                                        <svg class="swiper-button-prev-0 lg:w-[40px] md:w-[38px] group cursor-pointer"
+                                            xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none">
+                                            <rect class="group-hover:fill-white transition-all ease-in-out duration-800"
+                                                x="-0.5" y="0.5" width="39" height="39" rx="3.5"
+                                                transform="matrix(-1 0 0 1 39 0)" fill="#D45E05" />
+                                            <rect
+                                                class="group-hover:stroke-[#D45E05] transition-all ease-in-out duration-800"
+                                                x="-0.5" y="0.5" width="39" height="39" rx="3.5"
+                                                transform="matrix(-1 0 0 1 39 0)" stroke="white" />
+                                            <path
+                                                class="group-hover:fill-[#D45E05] transition-all ease-in-out duration-800"
+                                                d="M8.29289 19.2929C7.90237 19.6834 7.90237 20.3166 8.29289 20.7071L14.6569 27.0711C15.0474 27.4616 15.6805 27.4616 16.0711 27.0711C16.4616 26.6805 16.4616 26.0474 16.0711 25.6569L10.4142 20L16.0711 14.3431C16.4616 13.9526 16.4616 13.3195 16.0711 12.9289C15.6805 12.5384 15.0474 12.5384 14.6569 12.9289L8.29289 19.2929ZM31 19L9 19L9 21L31 21L31 19Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="absolute -translate-y-1/2 z-10 right-0 bottom-[-15px]">
+                                        <svg class="swiper-button-next-0 lg:w-[40px] md:w-[38px] group cursor-pointer"
+                                            xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none">
+                                            <rect class="group-hover:fill-white transition-all ease-in-out duration-800"
+                                                x="0.5" y="0.5" width="39" height="39" rx="3.5" fill="#D45E05" />
+                                            <rect
+                                                class="group-hover:stroke-[#D45E05] transition-all ease-in-out duration-800"
+                                                x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="white" />
+                                            <path
+                                                class="group-hover:fill-[#D45E05] transition-all ease-in-out duration-800"
+                                                d="M31.7071 20.7071C32.0976 20.3166 32.0976 19.6834 31.7071 19.2929L25.3431 12.9289C24.9526 12.5384 24.3195 12.5384 23.9289 12.9289C23.5384 13.3195 23.5384 13.9526 23.9289 14.3431L29.5858 20L23.9289 25.6569C23.5384 26.0474 23.5384 26.6805 23.9289 27.0711C24.3195 27.4616 24.9526 27.4616 25.3431 27.0711L31.7071 20.7071ZM9 21H31V19H9V21Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Slider -->
+    <section>
+        <div class="flex justify-center">
+            <div
+                class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] w-full flex flex-col xl:gap-[47px] lg:gap-[42px] md:gap-[38px] sm:gap-[36px] gap-[24px] lg:py-[83px] md:py-[72px] sm:py-[65px] py-[50px]">
+                <div class="w-full flex justify-center">
+                    <h2
+                        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center max-w-[661px] font-semibold leading-[140%]">
+                        Meet Our Agents at Your Services
+                    </h2>
+                </div>
+                <div class="relative min-[850px]:px-[60px]">
+                    <div class="swiper mySwiper-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide pt-13">
+                                <div class="border border-[rgba(0,0,0,0.70)] rounded-xl ">
+                                    <div>
+                                        <div class="flex justify-center -mt-12 relative z-10">
+                                            <img class="xl:w-[236px] lg:w-[215px] md:w-[200px] sm:w-[185px] w-[170px]"
+                                                src="./assets/svg/esther.svg" alt="Head of Secondary">
+                                        </div>
+                                        <div
+                                            class="flex flex-col lg:py-[15px] md:py-[12px] sm:py-[10px] py-[8px] md:gap-[8px] gap-[5px]">
+                                            <h4
+                                                class="text-center lg:text-base md:text-[15px] text-sm font-semibold leading-[140%]">
+                                                Esther Howard</h4>
+                                            <p
+                                                class="text-center lg:text-base md:text-[15px] sm:text-sm text-[13px] text-[rgba(0,0,0,0.70)]">
+                                                Head
+                                                of Secondary</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center md:gap-[15px] sm:gap-[12px] gap-[10px] border-t border-[rgba(0,0,0,0.70)] lg:py-[15px] md:py-[12px] sm:py-[10px] py-[8px]">
+                                        <h3
+                                            class=" lg:text-base md:text-[15px] sm:text-sm text-[13px] font-semibold leading-[140%]">
+                                            Experience :</h3>
+                                        <p
+                                            class="font-semibold text-[rgba(0,0,0,0.70)] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%]">
+                                            13 Years</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide pt-13">
+                                <div class="border border-[rgba(0,0,0,0.70)] rounded-xl">
+                                    <div>
+                                        <div class="flex justify-center -mt-12 relative z-10">
+                                            <img class="xl:w-[236px] lg:w-[215px] md:w-[200px] sm:w-[185px] w-[170px]"
+                                                src="./assets/svg/howard.svg" alt="Head of Secondary">
+                                        </div>
+                                        <div
+                                            class="flex flex-col lg:py-[15px] md:py-[12px] sm:py-[10px] py-[8px] md:gap-[8px] gap-[5px]">
+                                            <h4
+                                                class="text-center lg:text-base md:text-[15px] text-sm font-semibold leading-[140%]">
+                                                Esther Howard</h4>
+                                            <p
+                                                class="text-center lg:text-base md:text-[15px] sm:text-sm text-[13px] text-[rgba(0,0,0,0.70)]">
+                                                Head
+                                                of Secondary</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center md:gap-[15px] sm:gap-[12px] gap-[10px] border-t border-[rgba(0,0,0,0.70)] lg:py-[15px] md:py-[12px] sm:py-[10px] py-[8px]">
+                                        <h3
+                                            class=" lg:text-base md:text-[15px] sm:text-sm text-[13px] font-semibold leading-[140%]">
+                                            Experience :</h3>
+                                        <p
+                                            class="font-semibold text-[rgba(0,0,0,0.70)] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%]">
+                                            13 Years</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide pt-13">
+                                <div class="border border-[rgba(0,0,0,0.70)] rounded-xl overflow-visible">
+                                    <div>
+                                        <div class="flex justify-center -mt-12 relative z-10">
+                                            <img class="xl:w-[236px] lg:w-[215px] md:w-[200px] sm:w-[185px] w-[170px]"
+                                                src="./assets/svg/head-of-plan.svg" alt="Head of Secondary">
+                                        </div>
+                                        <div
+                                            class="flex flex-col lg:py-[15px] md:py-[12px] sm:py-[10px] py-[8px] md:gap-[8px] gap-[5px]">
+                                            <h4
+                                                class="text-center lg:text-base md:text-[15px] text-sm font-semibold leading-[140%]">
+                                                Esther Howard</h4>
+                                            <p
+                                                class="text-center lg:text-base md:text-[15px] sm:text-sm text-[13px] text-[rgba(0,0,0,0.70)]">
+                                                Head
+                                                of Secondary</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center md:gap-[15px] sm:gap-[12px] gap-[10px] border-t border-[rgba(0,0,0,0.70)] lg:py-[15px] md:py-[12px] sm:py-[10px] py-[8px]">
+                                        <h3
+                                            class=" lg:text-base md:text-[15px] sm:text-sm text-[13px] font-semibold leading-[140%]">
+                                            Experience :</h3>
+                                        <p
+                                            class="font-semibold text-[rgba(0,0,0,0.70)] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%]">
+                                            13 Years</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide pt-13">
+                                <div class="border border-[rgba(0,0,0,0.70)] rounded-xl overflow-visible">
+                                    <div>
+                                        <div class="flex justify-center -mt-12 relative z-10">
+                                            <img class="xl:w-[236px] lg:w-[215px] md:w-[200px] sm:w-[185px] w-[170px]"
+                                                src="./assets/svg/howard.svg" alt="Head of Secondary">
+                                        </div>
+                                        <div
+                                            class="flex flex-col lg:py-[15px] md:py-[12px] sm:py-[10px] py-[8px] md:gap-[8px] gap-[5px]">
+                                            <h4
+                                                class="text-center lg:text-base md:text-[15px] text-sm font-semibold leading-[140%]">
+                                                Esther Howard</h4>
+                                            <p
+                                                class="text-center lg:text-base md:text-[15px] sm:text-sm text-[13px] text-[rgba(0,0,0,0.70)]">
+                                                Head
+                                                of Secondary</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex justify-center items-center md:gap-[15px] sm:gap-[12px] gap-[10px] border-t border-[rgba(0,0,0,0.70)] lg:py-[15px] md:py-[12px] sm:py-[10px] py-[8px]">
+                                        <h3
+                                            class=" lg:text-base md:text-[15px] sm:text-sm text-[13px] font-semibold leading-[140%]">
+                                            Experience :</h3>
+                                        <p
+                                            class="font-semibold text-[rgba(0,0,0,0.70)] lg:text-base md:text-[15px] sm:text-sm text-[13px] leading-[140%]">
+                                            13 Years</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min-[850px]:block hidden">
+                        <div class="absolute left-[-15px] top-1/2 z-10">
+                            <svg class="swiper-button-prev-1 lg:w-[60px] md:w-[50px] group cursor-pointer"
+                                xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="none">
+                                <rect class="group-hover:fill-white transition-all ease-in-out duration-800" x="0.5"
+                                    y="0.5" width="59" height="59" rx="3.5" fill="#D45E05" />
+                                <rect class="group-hover:stroke-[#D45E05] transition-all ease-in-out duration-800"
+                                    x="0.5" y="0.5" width="59" height="59" rx="3.5" stroke="white" />
+                                <path class="group-hover:fill-[#D45E05] transition-all ease-in-out duration-800"
+                                    d="M18.2929 30.7071C17.9024 30.3166 17.9024 29.6834 18.2929 29.2929L24.6569 22.9289C25.0474 22.5384 25.6805 22.5384 26.0711 22.9289C26.4616 23.3195 26.4616 23.9526 26.0711 24.3431L20.4142 30L26.0711 35.6569C26.4616 36.0474 26.4616 36.6805 26.0711 37.0711C25.6805 37.4616 25.0474 37.4616 24.6569 37.0711L18.2929 30.7071ZM41 31H19V29H41V31Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                        <div class="absolute z-10 right-[-15px] top-1/2">
+                            <svg class="swiper-button-next-1 lg:w-[60px] md:w-[50px] group cursor-pointer"
+                                xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"
+                                fill="none">
+                                <rect class="group-hover:fill-white transition-all ease-in-out duration-800" x="0.5"
+                                    y="0.5" width="59" height="59" rx="3.5" fill="#D45E05" />
+                                <rect class="group-hover:stroke-[#D45E05] transition-all ease-in-out duration-800"
+                                    x="0.5" y="0.5" width="59" height="59" rx="3.5" stroke="white" />
+                                <path class="group-hover:fill-[#D45E05] transition-all ease-in-out duration-800"
+                                    d="M41.7071 30.7071C42.0976 30.3166 42.0976 29.6834 41.7071 29.2929L35.3431 22.9289C34.9526 22.5384 34.3195 22.5384 33.9289 22.9289C33.5384 23.3195 33.5384 23.9526 33.9289 24.3431L39.5858 30L33.9289 35.6569C33.5384 36.0474 33.5384 36.6805 33.9289 37.0711C34.3195 37.4616 34.9526 37.4616 35.3431 37.0711L41.7071 30.7071ZM19 31H41V29H19V31Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- News -->
+    <section>
+        <div class="flex justify-center">
+            <div
+                class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] xl:py-[71px] lg:py-[65px] md:py-[58px] sm:py-[50px] py-[42px] w-full flex flex-col xl:gap-[60px] lg:gap-[52px] md:gap-[45px] sm:gap-[38px] gap-[26px]">
+                <div
+                    class="flex items-center lg:gap-[40px] md:gap-[35px] sm:gap-[20px] gap-[15px] justify-between md:flex-row flex-col">
+                    <div>
+                        <h2
+                            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-[448px] font-semibold leading-[140%] md:text-start text-center">
+                            Browse Our News and Articles</h2>
+                    </div>
+                    <div>
+                        <p
+                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[140%] max-w-[478px] md:text-start text-center text-[rgba(0,0,0,0.70)]">
+                            Our team is
+                            dedicated to making sure
+                            you find a place where you can create lasting
+                            memories. Let
+                            us help you turn your
+                            vision into reality!</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:gap-[40px] md:gap-[32px] sm:gap-[26px] gap-[22px]">
+                    <div class="flex gap-[27px] flex-wrap lg:flex-nowrap justify-center">
+                        <div
+                            class="flex flex-col gap-[10px] lg:max-w-[362px] md:max-w-[345px] items-center md:items-start">
+                            <div>
+                                <img src="./assets/png/news-home.png" alt="home">
+                            </div>
+                            <h4
+                                class="lg:text-xl md:text-lg sm:text-[17px] text-base capitalize font-semibold leading-[155%] line-clamp-1">
+                                How to buy your first home
+                            </h4>
+                            <p
+                                class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[155%] capitalize text-[rgba(0,0,0,0.70)] line-clamp-4">
+                                Lorem ipsum dolor sit amet, consecteturs adipiscing elit, sed do eiusmod types and
+                                tempor incididunt ut labore et dolore the magna aliqua.</p>
+                            <p
+                                class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[155%] capitalize">
+                                23 march 2023</p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-[10px] lg:max-w-[362px] md:max-w-[345px] items-center md:items-start">
+                            <div>
+                                <img src="./assets/png/news-flat.png" alt="home">
+                            </div>
+                            <h4
+                                class="lg:text-xl md:text-lg sm:text-[17px] text-base capitalize font-semibold leading-[155%] line-clamp-1">
+                                The benefits of investing in real es...
+                            </h4>
+                            <p
+                                class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[155%] capitalize text-[rgba(0,0,0,0.70)] line-clamp-4">
+                                Lorem ipsum dolor sit amet, consecteturs adipiscing elit, sed do eiusmod types and
+                                tempor incididunt ut labore et dolore
+                                the magna aliqua.</p>
+                            <p
+                                class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[155%] capitalize">
+                                25 march 2023</p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-[10px] lg:max-w-[362px] md:max-w-[345px] items-center md:items-start">
+                            <div>
+                                <img src="./assets/png/news-banglo.png" alt="home">
+                            </div>
+                            <h4
+                                class="lg:text-xl md:text-lg sm:text-[17px] text-base capitalize font-semibold leading-[155%] line-clamp-1">
+                                5 Real estate trends you should kn..</h4>
+                            <p
+                                class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[155%] capitalize text-[rgba(0,0,0,0.70)] line-clamp-4">
+                                Lorem ipsum dolor sit amet, consecteturs adipiscing elit, sed do eiusmod types and
+                                tempor incididunt ut labore et dolore
+                                the magna aliqua.</p>
+                            <p
+                                class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[155%] capitalize">
+                                27 march 2023</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div><button
+                                class="lg:text-base md:text-[15px] sm:text-sm text-[13px] bg-[#D45E05] text-white xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] rounded-sm cursor-pointer font-semibold leading-[128%]  hover:bg-white hover:text-[#D45E05] hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out">View
+                                All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Form -->
+    <section>
+        <div class="flex justify-center">
+            <div
+                class="max-w-[1240px] xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] w-full flex  lg:justify-between justify-center gap-[20px] lg:flex-nowrap flex-wrap lg:pb-[155px] md:pb-[125px] sm:pb-[100px] pb-[85px]">
+                <div
+                    class="lg:max-w-[482px] flex flex-col lg:gap-[36px] md:gap-[32px] sm:gap-[27px] gap-[22px] pt-[31px]">
+                    <div class="flex flex-col lg:gap-[15px] md:gap-[12px] sm:gap-[8px] gap-[5px]">
+                        <h2 class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-semibold">Get In Touch</h2>
+                        <p
+                            class="text-[rgba(0,0,0,0.70)] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[144%]">
+                            Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="flex flex-col lg:gap-[30px] md:gap-[27px] sm:gap-[21px] gap-[18px]">
+                        <a class="flex items-center lg:gap-[20px] md:gap-[17px] sm:gap-[14px] gap-[10px]"
+                            href="https://www.google.com/maps/@40.7562526,-73.9835254,766m/data=!3m1!1e3?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank">
+                            <div>
+                                <img class="lg:w-[40px] md:w-[37px] sm:w-[34px] w-[30px]"
+                                    src="./assets/svg/location-black.svg" alt="location">
+                            </div>
+                            <div class="flex flex-col gap-[]">
+                                <h4
+                                    class="lg:text-xl md:text-lg sm:text-[17px] text-base font-semibold leading-[123.6%]">
+                                    Estate
+                                </h4>
+                                <p class="lg:text-base md:text-[15px] sm:text-sm text-[13px]">35 west 45th street 3rd
+                                    floor
+                                    new york,NY 10036</p>
+                            </div>
+                        </a>
+                        <a class="flex items-center lg:gap-[20px] md:gap-[17px] sm:gap-[14px] gap-[10px]"
+                            href="mailto:info@estate.com" target="_blank">
+                            <div>
+                                <img class="lg:w-[40px] md:w-[37px] sm:w-[34px] w-[30px]" src="./assets/svg/email.svg"
+                                    alt="mail">
+                            </div>
+                            <div class="flex flex-col gap-[]">
+                                <h4
+                                    class="lg:text-xl md:text-lg sm:text-[17px] text-base font-semibold leading-[123.6%]">
+                                    Email Address</h4>
+                                <p class="lg:text-base md:text-[15px] sm:text-sm text-[13px]">info@estate.com</p>
+                            </div>
+                        </a>
+                        <a class="flex items-center lg:gap-[20px] md:gap-[17px] sm:gap-[14px] gap-[10px]"
+                            href="tel:212-997-8800" target="_blank">
+                            <div>
+                                <img class="lg:w-[40px] md:w-[37px] sm:w-[34px] w-[30px]" src="./assets/svg/phone.svg"
+                                    alt="location">
+                            </div>
+                            <div class="flex flex-col gap-[]">
+                                <h4
+                                    class="lg:text-xl md:text-lg sm:text-[17px] text-base font-semibold leading-[123.6%]">
+                                    Phone No.
+                                </h4>
+                                <p class="lg:text-base md:text-[15px] sm:text-sm text-[13px]">212-997-8800</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="relative z-10 mr-[-170px]">
+                        <form
+                            class="max-w-[448px] bg-white rounded-xl w-full lg:px-[23px] md:px-[20px] sm:px-[18px] px-[15px] lg:py-[30px_24px] md:py-[26px_21px] sm:py-[24px_18px] py-[16px] flex flex-col lg:gap-[15px] md:gap-[13px] sm:gap-[11px] gap-[9px]"
+                            action="get-touch-data">
+                            <div
+                                class="px-[7px] w-full flex lg:gap-[15px] md:gap-[13px] sm:gap-[11px] gap-[9px] md:flex-row flex-col">
+                                <input
+                                    class="bg-[#F0F5FF] placeholder:text-black p-[7px_15px] md:w-1/2 w-full outline-none lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                    type="text" placeholder="First Name">
+                                <input
+                                    class="bg-[#F0F5FF] placeholder:text-black p-[7px_15px] md:w-1/2 w-full outline-none lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                    type="text" placeholder="Last Name">
+                            </div>
+                            <div
+                                class="px-[7px] w-full flex lg:gap-[15px] md:gap-[13px] sm:gap-[11px] gap-[9px] md:flex-row flex-col">
+                                <input
+                                    class="bg-[#F0F5FF] placeholder:text-black p-[7px_15px] md:w-1/2 w-full outline-none lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                    type="tel" placeholder="Phone No.">
+                                <input
+                                    class="bg-[#F0F5FF] placeholder:text-black p-[7px_15px] md:w-1/2 w-full outline-none lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                    type="email" placeholder="Email Address">
+                            </div>
+                            <div class="px-[7px] w-full flex">
+                                <textarea
+                                    class="bg-[#F0F5FF] placeholder:text-black p-[7px_15px] outline-none w-full lg:text-base md:text-[15px] sm:text-sm text-[13px]"
+                                    placeholder="Message" rows="4"></textarea>
+                            </div>
+                            <div class="lg:pt-[25px] md:pt-[19px] sm:pt-[14px] pt-[10px]">
+                                <input
+                                    class="xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] lg:text-base md:text-[15px] sm:text-sm text-[13px] bg-[#D45E05] rounded-sm text-white  hover:bg-white hover:text-[#D45E05] hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out cursor-pointer"
+                                    type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <img class="rounded-xl" src="./assets/png/form-bg.png" alt="bg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-black">
+        <div class="flex justify-center">
+            <div
+                class=" max-w-[1240px] w-full xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] lg:py-[78px_50px] md:py-[70px_44px] sm:py-[52px_36px] py-[40px_28px] flex items-center justify-between md:flex-row flex-col lg:gap-[32px] md:gap-[28px] sm:gap-[20px] gap-[18px]">
+                <div class="flex flex-col md:gap-[15px] sm:gap-[11px] gap-[7px]">
+                    <h2
+                        class="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-semibold leading-[155%] text-white sm:text-start text-center">
+                        Be
+                        aware of
+                        latest trends</h2>
+                    <p
+                        class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal leading-[155%] text-[rgba(255,255,255,0.70)] sm:text-start text-center">
+                        Stay
+                        informed of new trends and also
+                        with our various offer</p>
+                </div>
+                <div class="flex bg-white rounded-sm sm:max-w-[338px] max-w-[275px] w-full justify-between">
+                    <input
+                        class="outline-none text-[rgba(0,0,0,0.70)] xl:ps-[11px] lg:ps-[9px] md:ps-[8px] sm:ps-[7px] ps-[6px] placeholder:lg:text-base placeholder:md:text-[15px] placeholder:sm:text-sm placeholder:text-[13px]"
+                        placeholder="email@gmail.com" type="email">
+                    <input
+                        class="bg-[#D45E05] rounded-sm text-white xl:p-[11px_25px] lg:p-[9px_22px] md:p-[8px_18px] sm:p-[7px_16px] p-[6px_15px] ml-[-70px] lg:text-base md:text-[15px] sm:text-sm text-[13px] cursor-pointer hover:bg-white hover:text-[#D45E05] hover:shadow-[0px_10px_30px_-2px_#D45E05] transition-all duration-800 ease-in-out"
+                        type="submit" value="Subscribe">
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center border-y border-white">
+            <div
+                class="max-w-[1240px] w-full xl:px-[50px] lg:px-[42px] md:px-[32px] sm:px-[24px] px-[16px] lg:py-[67px] md:py-[58px] sm:py-[48px] py-[36px]">
+                <div
+                    class="flex min-[930px]:justify-between w-full gap-[40px_20px] min-[930px]:flex-nowrap flex-wrap justify-center">
+                    <div
+                        class="min-[930px]:text-start text-center max-w-[306px] flex flex-col lg:gap-[32px] md:gap-[27px] sm:gap-[22px] gap-[18px] min-[930px]:items-start items-center w-full">
+                        <div class="flex flex-col sm:gap-[10px] gap-[7px]">
+                            <h2
+                                class="text-white lg:text-2xl md:text-xl sm:text-lg text-base font-semibold leading-[128%]">
+                                Estate
+                            </h2>
+                            <p class="text-white opacity-70 sm:text-sm text-xs font-normal leading-[155%]">Lorem ipsum
+                                dolor
+                                sit amet, consectetur
+                                adipiscing elit,
+                                sed
+                                do
+                                eiusmod tempor.</p>
+                        </div>
+                        <div class="flex lg:gap-[32px] md:gap-[27px] sm:gap-[22px] gap-[18px]">
+                            <a class="group" href="https://www.facebook.com/" target="_blank">
+                                <svg class="lg:w-[38px] md:w-[36px] sm:w-[32px] w-[30px]"
+                                    xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39"
+                                    fill="none">
+                                    <circle class="group-hover:fill-[#1877F2] transition-all ease-in-out duration-800"
+                                        cx="19.2" cy="19.199" r="19.2" fill="white" />
+                                    <rect class="group-hover:fill-[#1877F2] transition-all ease-in-out duration-800"
+                                        x="3.20117" y="3.19922" width="32" height="32" rx="16" fill="white" />
+                                    <path class="group-hover:fill-white transition-all duration-800 ease-in-out"
+                                        d="M21.8665 21.1986H25.1999L26.5332 15.8652H21.8665V13.1986C21.8665 11.8252 21.8665 10.5319 24.5332 10.5319H26.5332V6.0519C26.0985 5.99457 24.4572 5.86523 22.7239 5.86523C19.1039 5.86523 16.5332 8.07457 16.5332 12.1319V15.8652H12.5332V21.1986H16.5332V32.5319H21.8665V21.1986Z"
+                                        fill="#020105" />
+                                </svg>
+                            </a>
+                            <a class="group" href="https://www.instagram.com/" target="_blank"><svg
+                                    class="lg:w-[38px] md:w-[36px] sm:w-[32px] w-[30px]"
+                                    xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39"
+                                    fill="none">
+                                    <circle cx="19.6004" cy="19.199" r="19.2" fill="white" />
+                                    <rect x="3.59961" y="3.19922" width="32" height="32" rx="16" fill="white" />
+                                    <path class="group-hover:fill-[#E1306C] transition-all duration-800 ease-in-out"
+                                        d="M20.9704 5.86621C22.4704 5.87021 23.2317 5.87821 23.889 5.89688L24.1477 5.90621C24.4464 5.91688 24.741 5.93021 25.097 5.94621C26.5157 6.01288 27.4837 6.23688 28.333 6.56621C29.213 6.90488 29.9544 7.36354 30.6957 8.10354C31.374 8.76985 31.8986 9.57617 32.2331 10.4662C32.5624 11.3155 32.7864 12.2835 32.8531 13.7035C32.8691 14.0582 32.8824 14.3529 32.893 14.6529L32.9011 14.9115C32.9211 15.5675 32.9291 16.3289 32.9317 17.8289L32.9331 18.8235V20.5702C32.9363 21.5428 32.9261 22.5153 32.9024 23.4875L32.8944 23.7462C32.8837 24.0462 32.8704 24.3409 32.8544 24.6955C32.7877 26.1155 32.5611 27.0822 32.2331 27.9329C31.8986 28.8229 31.374 29.6292 30.6957 30.2955C30.0294 30.9738 29.2231 31.4985 28.333 31.8329C27.4837 32.1622 26.5157 32.3862 25.097 32.4529L24.1477 32.4929L23.889 32.5009C23.2317 32.5195 22.4704 32.5289 20.9704 32.5315L19.9757 32.5329H18.2304C17.2574 32.5363 16.2844 32.5261 15.3117 32.5022L15.0531 32.4942C14.7365 32.4822 14.4201 32.4684 14.1037 32.4529C12.6851 32.3862 11.7171 32.1622 10.8664 31.8329C9.97682 31.4983 9.17097 30.9736 8.50505 30.2955C7.82631 29.6294 7.3012 28.823 6.96638 27.9329C6.63705 27.0835 6.41305 26.1155 6.34638 24.6955L6.30638 23.7462L6.29972 23.4875C6.27514 22.5153 6.26403 21.5428 6.26638 20.5702V17.8289C6.26269 16.8563 6.27247 15.8838 6.29572 14.9115L6.30505 14.6529C6.31572 14.3529 6.32905 14.0582 6.34505 13.7035C6.41172 12.2835 6.63572 11.3169 6.96505 10.4662C7.30064 9.57581 7.82668 8.76946 8.50638 8.10354C9.17192 7.42561 9.9773 6.90098 10.8664 6.56621C11.7171 6.23688 12.6837 6.01288 14.1037 5.94621C14.4584 5.93021 14.7544 5.91688 15.0531 5.90621L15.3117 5.89821C16.284 5.87452 17.2565 5.8643 18.229 5.86754L20.9704 5.86621ZM19.5997 12.5329C17.8316 12.5329 16.1359 13.2353 14.8857 14.4855C13.6354 15.7357 12.9331 17.4314 12.9331 19.1995C12.9331 20.9677 13.6354 22.6633 14.8857 23.9136C16.1359 25.1638 17.8316 25.8662 19.5997 25.8662C21.3678 25.8662 23.0635 25.1638 24.3138 23.9136C25.564 22.6633 26.2664 20.9677 26.2664 19.1995C26.2664 17.4314 25.564 15.7357 24.3138 14.4855C23.0635 13.2353 21.3678 12.5329 19.5997 12.5329ZM19.5997 15.1995C20.125 15.1995 20.6452 15.3028 21.1305 15.5038C21.6158 15.7047 22.0568 15.9993 22.4283 16.3706C22.7998 16.742 23.0945 17.1829 23.2956 17.6682C23.4967 18.1535 23.6003 18.6736 23.6004 19.1989C23.6005 19.7242 23.4971 20.2443 23.2962 20.7297C23.0952 21.215 22.8007 21.656 22.4293 22.0275C22.0579 22.399 21.617 22.6937 21.1317 22.8948C20.6465 23.0959 20.1263 23.1995 19.6011 23.1995C18.5402 23.1995 17.5228 22.7781 16.7726 22.028C16.0225 21.2778 15.6011 20.2604 15.6011 19.1995C15.6011 18.1387 16.0225 17.1213 16.7726 16.3711C17.5228 15.621 18.5402 15.1995 19.6011 15.1995M26.601 10.5329C26.159 10.5329 25.7351 10.7085 25.4225 11.021C25.11 11.3336 24.9344 11.7575 24.9344 12.1995C24.9344 12.6416 25.11 13.0655 25.4225 13.3781C25.7351 13.6906 26.159 13.8662 26.601 13.8662C27.0431 13.8662 27.467 13.6906 27.7796 13.3781C28.0921 13.0655 28.2677 12.6416 28.2677 12.1995C28.2677 11.7575 28.0921 11.3336 27.7796 11.021C27.467 10.7085 27.0431 10.5329 26.601 10.5329Z"
+                                        fill="#020105" />
+                                </svg></a>
+                            <a class="group" href="https://www.youtube.com/" target="_blank"><svg
+                                    class="lg:w-[38px] md:w-[36px] sm:w-[32px] w-[30px]"
+                                    xmlns="http://www.w3.org/2000/svg" width="40" height="39" viewBox="0 0 40 39"
+                                    fill="none">
+                                    <circle cx="20.0008" cy="19.199" r="19.2" fill="white" />
+                                    <rect x="4" y="3.19922" width="32" height="32" rx="12" fill="white" />
+                                    <path class="group-hover:fill-[#FF0000] transition-all ease-in-out duration-800"
+                                        d="M20.3266 8.53223C21.0386 8.53623 22.82 8.55356 24.7133 8.62956L25.3853 8.65889C27.2906 8.74823 29.1946 8.90289 30.14 9.16556C31.4 9.52023 32.3893 10.5522 32.724 11.8616C33.2573 13.9416 33.324 17.9976 33.332 18.9802L33.3333 19.1829V19.4149C33.324 20.3976 33.2573 24.4549 32.724 26.5336C32.3853 27.8469 31.3946 28.8802 30.14 29.2296C29.1946 29.4922 27.2906 29.6469 25.3853 29.7362L24.7133 29.7669C22.82 29.8416 21.0386 29.8602 20.3266 29.8629L20.0133 29.8642H19.6733C18.1666 29.8549 11.8653 29.7869 9.85997 29.2296C8.6013 28.8749 7.61064 27.8429 7.27597 26.5336C6.74264 24.4536 6.67597 20.3976 6.66797 19.4149V18.9802C6.67597 17.9976 6.74264 13.9402 7.27597 11.8616C7.61464 10.5482 8.6053 9.51489 9.8613 9.16689C11.8653 8.60823 18.168 8.54023 19.6746 8.53223H20.3266ZM17.3333 14.5322V23.8656L25.3333 19.1989L17.3333 14.5322Z"
+                                        fill="#020105" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div
+                        class="min-[930px]:max-w-[668px] flex justify-between w-full md:gap-[20px] gap-[30px_25px] sm:flex-nowrap flex-wrap">
+                        <div class="flex flex-col lg:gap-[32px] md:gap-[28px] sm:gap-[23px] gap-[19px] max-w-[165px]">
+                            <p class="text-white lg:text-base md:text-[15px] text-sm font-semibold">About</p>
+                            <ul class="flex flex-col text-white lg:gap-[23px] md:gap-[20px] sm:gap-[17px] gap-[14px]">
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Our Mission</a></li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Customer Services</a></li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Our Sustainability Efforts</a>
+                                </li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Our Locations</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col lg:gap-[32px] md:gap-[28px] sm:gap-[23px] gap-[19px] max-w-[75px]">
+                            <p class="text-white lg:text-base md:text-[15px] text-sm font-semibold">Services</p>
+                            <ul class="flex flex-col text-white lg:gap-[23px] md:gap-[20px] sm:gap-[17px] gap-[14px]">
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">For Sell</a></li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">For Rent</a></li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Our Agents</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col lg:gap-[32px] md:gap-[28px] sm:gap-[23px] gap-[19px] max-w-[80px]">
+                            <p class="text-white lg:text-base md:text-[15px] text-sm font-semibold">Support</p>
+                            <ul class="flex flex-col text-white lg:gap-[23px] md:gap-[20px] sm:gap-[17px] gap-[14px]">
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Help Centre</a></li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">FAQ’s</a></li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Status</a>
+                                </li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col lg:gap-[32px] md:gap-[28px] sm:gap-[23px] gap-[19px] max-w-[148px]">
+                            <p class="text-white lg:text-base md:text-[15px] text-sm font-semibold">FAQ</p>
+                            <ul class="flex flex-col text-white lg:gap-[23px] md:gap-[20px] sm:gap-[17px] gap-[14px]">
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Why Estate</a></li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Company Information</a></li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Returns and Refund</a>
+                                </li>
+                                <li><a class="sm:text-sm text-xs font-normal cursor-pointer opacity-70 hover:opacity-100 transition-all duration-800 ease-in-out"
+                                        href="">Customer Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:py-[20px_70px] md:py-[17px_62px] sm:py-[15px_50px] py-[12px_38px]">
+            <p class="text-white text-center font-normal lg:text-base md:text-[15px] sm:text-sm text-sm opacity-70">
+                Copyright @ Estate.com</p>
+        </div>
+    </footer>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            speed: 800,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                400: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                },
+                560: {
+                    slidesPerView: 2,
+                    spaceBetween: 35,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 25,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper(".mySwiper-1", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                centeredSlides: true,
+                loop: true,
+                speed: 800,
+                navigation: {
+                    nextEl: ".swiper-button-next-0",
+                    prevEl: ".swiper-button-prev-0",
+                },
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper(".mySwiper-2", {
+                slidesPerView: 1,
+                spaceBetween: 15,
+                loop: true,
+                speed: 800,
+                navigation: {
+                    nextEl: ".swiper-button-next-1",
+                    prevEl: ".swiper-button-prev-1",
+                },
+                breakpoints: {
+                    400: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 20,
+                    },
+                    560: {
+                        slidesPerView: 2,
+                        spaceBetween: 35,
+                    },
+                    768: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 25,
+                    },
+
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1440: {
+                        slidesPerView: 3,
+                        spaceBetween: 44,
+                    }
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
