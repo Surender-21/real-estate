@@ -89,10 +89,10 @@
                                 </svg>
                             </label>
                             <div
-                                class="hidden peer-checked:block fixed right-0 top-0 shadow-md z-20 w-full sm:max-w-[250px] max-w-[200px] py-[15px] px-[18px] rounded-bl-[14px] bg-[#F0F5FF] min-h-dvh overflow-scroll">
-                                <div class="flex">
+                                class="hidden peer-checked:block fixed right-0 top-0 shadow-md z-20 w-full sm:max-w-[250px] max-w-[200px] py-[15px] px-[18px] rounded-bl-[14px] bg-[#F0F5FF] max-h-screen">
+                                <div class="flex min-h-dvh relative">
                                     <ul
-                                        class="flex flex-col md:gap-[14px] sm:gap-[10px] gap-[4px] pt-[25px] justify-center items-center w-full text-center">
+                                        class="flex flex-col gap-4 mt-[25px] pb-[25px] w-full justify-center text-center overflow-y-auto h-screen [scrollbar-width:none]">
                                         <li><a class=" md:text-base sm:text-[15px] text-sm" href="./index.html">
                                                 Home</a>
                                         </li>
@@ -127,7 +127,7 @@
                                                 up</a>
                                         </li>
                                     </ul>
-                                    <label for="menu" class="ml-auto block cursor-pointer mb-2">
+                                    <label for="menu" class="ml-auto block cursor-pointer mb-2 fixed right-[2%]">
                                         <svg class="md:w-[24px] sm:w-[22px] w-[20px]" xmlns="http://www.w3.org/2000/svg"
                                             fill="none" height="24px" viewBox="0 0 24 24" width="24px"
                                             stroke="currentColor" class="text-black">
