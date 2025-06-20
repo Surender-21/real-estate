@@ -89,10 +89,11 @@
                                 </svg>
                             </label>
                             <div
-                                class="hidden peer-checked:block fixed right-0 top-0 shadow-md z-20 w-full sm:max-w-[250px] max-w-[200px] py-[15px] px-[18px] rounded-bl-[14px] bg-[#F0F5FF] max-h-screen">
-                                <div class="flex min-h-dvh relative">
+                                class="hidden peer-checked:block fixed right-0 top-0 shadow-md z-20 w-full sm:max-w-[250px] max-w-[200px] py-[15px] px-[18px] rounded-bl-[14px] bg-[#F0F5FF] min-h-dvh">
+                                <div
+                                    class="flex max-h-dvh relative flex-col overflow-auto mt-[25px] [scrollbar-width:none]">
                                     <ul
-                                        class="flex flex-col gap-4 mt-[25px] pb-[50px] w-full text-center overflow-y-auto h-screen [scrollbar-width:none]">
+                                        class="flex flex-col gap-4 pb-[25px] w-full text-center justify-center h-dvh min-h-[600px]">
                                         <li><a class=" md:text-base sm:text-[15px] text-sm" href="./index.html">
                                                 Home</a>
                                         </li>
@@ -127,7 +128,8 @@
                                                 up</a>
                                         </li>
                                     </ul>
-                                    <label for="menu" class="ml-auto block cursor-pointer mb-2 fixed right-[2%]">
+                                    <label for="menu"
+                                        class="ml-auto block cursor-pointer mb-2 fixed right-[2%] top-[15px]">
                                         <svg class="md:w-[24px] sm:w-[22px] w-[20px]" xmlns="http://www.w3.org/2000/svg"
                                             fill="none" height="24px" viewBox="0 0 24 24" width="24px"
                                             stroke="currentColor" class="text-black">
