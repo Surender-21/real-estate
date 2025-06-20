@@ -7,3 +7,7 @@ body {
 .swiper-slide-active .btn {
     display: block !important;
 }
+
+.max-h-inherit {
+    max-height: inherit;
+}
